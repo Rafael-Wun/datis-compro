@@ -59,8 +59,18 @@ h6 {
   @apply lg:py-3;
   @apply text-neutral-9;
   @apply rounded-md;
+  @apply transition-all;
+  @apply duration-300;
+  @apply ease-out;
+}
+
+.button-hover {
+  @apply hover:bg-neutral-2;
+}
+
+.button-hover-rev {
   @apply hover:text-neutral-2;
-  @apply hover:bg-white;
+  @apply hover:bg-neutral-9;
 }
 
 .primary {

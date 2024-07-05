@@ -1,9 +1,9 @@
 <template>
   <div v-if="$route.path != '/'">
     <img src="@/assets/img/hero-bg.jpg" class="absolute inset-0 z-0 w-full h-48 md:h-64 lg:h-80 object-cover brightness-50" />
-    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 w-auto xl:w-4/5 h-48 md:h-64 lg:h-80">
+    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 w-auto xl:w-4/5 h-48 md:h-64 lg:h-80 text-neutral-9">
       <div class="space-y-2">
-        <h3 class="text-neutral-9 font-bold">{{ $route.meta.title }}</h3>
+        <h3 v-if="$route.meta.title">{{ $route.meta.title }}</h3>
         <nav aria-label="breadcrumb">
           <ul>
             <li v-for="(crumb, index) in breadcrumbs" :key="index" class="inline text-neutral-9">
@@ -22,12 +22,12 @@
         <div class="hidden md:flex items-center gap-1 w-min p-1 pr-2 bg-neutral-9 text-xs whitespace-nowrap rounded-md"><span class="bg-primary p-1 text-neutral-9 rounded-[4px]">New!</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="icon-[ph--caret-right-bold]" /></div>
       </NuxtLink>
       <div class="space-y-3">
-        <h2 class="w-4/5 md:w-[480px] text-neutral-9 font-bold leading-tight">Empowering a Connected Future</h2>
+        <h2 class="w-4/5 md:w-[480px] text-neutral-9 leading-tight">Empowering a Connected Future</h2>
         <p class="w-4/5 md:w-[480px] text-neutral-8">It involves creating an environment where people have access to the necessary tools, resources, and opportunities to fully participate in the digital world and leverage its potential to improve their lives.</p>
       </div>
       <div class="space-x-5">
-        <NuxtLink target="/about" class="button primary">Get to Know Us</NuxtLink>
-        <NuxtLink target="/solutions" class="button secondary">Our Solutions</NuxtLink>
+        <NuxtLink target="/about" class="button button-hover-rev primary">Get to Know Us</NuxtLink>
+        <NuxtLink target="/solutions" class="button button-hover-rev secondary">Our Solutions</NuxtLink>
       </div>
     </div>
   </div>

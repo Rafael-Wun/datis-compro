@@ -7,7 +7,7 @@
           title="Connect with Us">
           We'd love to hear from you! Reach out to us for any inquiries, support, or to learn more about how we can help your business succeed.
         </SectionHeading>
-        <form action="#" class="space-y-3">
+        <form action="#" class="space-y-3 xl:space-y-6">
             <div class="grid gap-2">
               <label for="name">Name</label>
               <input type="text" id="name" placeholder="Your Name" class="px-3 py-2 border border-neutral-7 rounded-md" />
@@ -25,7 +25,7 @@
               <textarea name="msg" id="msg" placeholder="Your Message" rows="6" class="px-3 py-2 min-h-20 border border-neutral-7 rounded-md" />
             </div>
             <div class="flex justify-end">
-              <button class="button primary">Send Message</button>
+              <button class="button button-hover primary">Send Message</button>
             </div>
           </form>
       </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="group flex flex-col justify-center items-center gap-6 min-w-40 p-5 bg-white hover:bg-primary hover:bg-opacity-25 border border-neutral-7 hover:border-primary rounded-md">
         <img src="/icon/whatsapp.png" class="size-12 group-hover:animate-bounce">
-        <span class="text-neutral-3 font-medium">+62 888 777 666</span>
+        <span class="text-neutral-3 font-medium">+62 811 1320 6419</span>
       </div>
       <div class="group flex flex-col justify-center items-center gap-6 min-w-40 p-5 bg-white hover:bg-primary hover:bg-opacity-25 border border-neutral-7 hover:border-primary rounded-md">
         <img src="/icon/email.png" class="size-12 group-hover:animate-bounce">

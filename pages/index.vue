@@ -26,10 +26,10 @@
         </div>
         <SectionHeading
           title="Discover Our Services"
-          light="true">
+          :light="true">
           More than just IoT, we offer a comprehensive range of IT services. Discover our diverse solutions tailored to meet your unique needs, driving success and satisfaction.
         </SectionHeading>
-        <NuxtLink to="/services" class="button secondary">View All Services</NuxtLink>
+        <NuxtLink to="/services" class="button button-hover-rev secondary">View All Services</NuxtLink>
       </SectionDefault>
     </div>
   </div>
@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="text-center">
-      <NuxtLink to="/about-us" class="button primary">Get to Know Us</NuxtLink>
+      <NuxtLink to="/about-us" class="button button-hover primary">Get to Know Us</NuxtLink>
     </div>
   </SectionDefault>
   <div class="relative">
@@ -60,7 +60,7 @@
           <h3>Connect with Us Today</h3>
           <p class="text-neutral-8">We'd love to connect with you! Whether you're curious, have feedback, or just want to chat, our team is here to help.</p>
         </div>
-        <NuxtLink to="/contact-us" class="button secondary">Contact Now</NuxtLink>
+        <NuxtLink to="/contact-us" class="button button-hover-rev secondary">Contact Now</NuxtLink>
       </div>
     </div>
   </div>

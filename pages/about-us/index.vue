@@ -50,7 +50,7 @@
           <h3>Connect with Us Today</h3>
           <p class="text-neutral-6">We'd love to connect with you! Whether you're curious, have feedback, or just want to chat, our team is here to help.</p>
         </div>
-        <NuxtLink to="/contact-us" class="button primary">Contact Now</NuxtLink>
+        <NuxtLink to="/contact-us" class="button button-hover primary">Contact Now</NuxtLink>
       </div>
     </div>
   </div>

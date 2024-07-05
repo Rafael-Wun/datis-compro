@@ -23,7 +23,7 @@
             </div>
             <div class="flex items-center gap-3">
               <span class="min-w-6 size-6 fill-neutral-9 icon-[ph--whatsapp-logo]"></span>
-              <span>+62 811-1772-191</span>
+              <span>+62 811 1320 6419</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="min-w-6 size-6 fill-neutral-9 icon-[ph--envelope-simple]"></span>
@@ -36,7 +36,7 @@
           <div class="flex flex-col gap-4">
             <!-- :to="`/solutions/${solution.id}`" -->
             <NuxtLink
-              v-for="solution in solutions.solutions"
+              v-for="solution in solutions.items"
               :key="solution.id"
               class="flex items-center gap-2 hover:text-primary"
             >
