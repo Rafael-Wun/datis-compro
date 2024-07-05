@@ -42,6 +42,18 @@
       </div>
     </SectionDefault>
   </div>
+  <div class="relative">
+    <img src="@/assets/img/contact-bg.jpg" class="hidden md:block absolute z-0 top-0 left-0 w-1/2 h-full object-cover">
+    <div class="relative z-10 flex justify-end text-neutral-2 bg-gradient-to-l from-neutral-9 via-neutral-9 to-neutral-9 md:to-neutral-9/0">
+      <div class="space-y-10 md:space-y-16 lg:space-y-20 mr-4 md:mr-8 lg:mr-32 py-10 md:py-16 xl:py-24 w-[480px] xl:w-[600px]">
+        <div class="space-y-2">
+          <h3>Connect with Us Today</h3>
+          <p class="text-neutral-6">We'd love to connect with you! Whether you're curious, have feedback, or just want to chat, our team is here to help.</p>
+        </div>
+        <NuxtLink to="/contact-us" class="button primary">Contact Now</NuxtLink>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
