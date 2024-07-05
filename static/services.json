@@ -1,0 +1,43 @@
+{
+  "header": "Our Services",
+  "title": "Services We Provide",
+  "description": "Beyond IoT, we provide a variety of services. Our expertise spans multiple technologies, allowing us to deliver comprehensive solutions that drive innovation and efficiency.",
+  "items": [
+    {
+      "id": "system-integrator",
+      "name": "System Integrator",
+      "description": "Transforming businesses with seamless integration solutions for enhanced efficiency and productivity.",
+      "icon": "technology.png"
+    },
+    {
+      "id": "software-development",
+      "name": "Software Development",
+      "description": "Elevating businesses through custom software development solutions, tailored to meet your unique needs and drive digital transformation.",
+      "icon": "coding.png"
+    },
+    {
+      "id": "engineering-service",
+      "name": "Engineering Service",
+      "description": "Delivering excellence in engineering services, harnessing expertise and innovation to bring your visions to life.",
+      "icon": "spanner.png"
+    },
+    {
+      "id": "product-design-development",
+      "name": "Product Design Development",
+      "description": "From concept to reality, shaping ideas into exceptional products through comprehensive design and development services.",
+      "icon": "box.png"
+    },
+    {
+      "id": "it-managed-service",
+      "name": "IT Managed Service",
+      "description": "Simplify your IT operations and maximize productivity with our comprehensive IT Managed Services.",
+      "icon": "server.png"
+    },
+    {
+      "id": "iot-development",
+      "name": "IoT Development",
+      "description": "Unlocking the power of connectivity with innovative IoT development solutions for a smarter and interconnected world.",
+      "icon": "cloud-computing.png"
+    }
+  ]
+}

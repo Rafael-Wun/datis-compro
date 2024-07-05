@@ -1,0 +1,153 @@
+{
+  "solutions": [
+    {
+      "id": "fire-safety",
+      "name": "Fire Safety",
+      "description": "We provide advanced fire detection systems, alarm monitoring systems, and fire suppression technologies. These solutions ensure early warning and quick response to any fire incidents, helping to minimize damage and ensure safety in residential, commercial, and industrial settings.",
+      "icon": "fire.png",
+      "items": [
+        {
+          "id": "fire-detector",
+          "name": "Fire Detector",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "kentec-fire-detector-sn123",
+              "name": "KENTEC Fire Detector SN123",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        },
+        {
+          "id": "fire-suppression",
+          "name": "Fire Suppression",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "kentec-fire-suppression-sn123",
+              "name": "KENTEC Fire Suppression SN123",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        },
+        {
+          "id": "fire-panel-monitoring-system",
+          "name": "Fire Panel Monitoring System",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "apilogik-watch",
+              "name": "Apilogik Watch",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        },
+        {
+          "id": "rescuelogic",
+          "name": "Rescue Logic",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "emergency-exit-sign",
+              "name": "Emergency Exit Sign",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hazard-mitigation",
+      "name": "Hazard Mitigation",
+      "description": "We offer comprehensive strategies and technologies to identify potential hazards, assess risks, and implement measures to prevent or reduce the effects of these hazards. This includes gas detection and emergency preparedness plans to safeguard communities and businesses.",
+      "icon": "hazard-sign.png",
+      "items": [
+        {
+          "id": "gas-detector",
+          "name": "Gas Detector",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": []
+        }
+      ]
+    },
+    {
+      "id": "environtmental-monitoring",
+      "name": "Environmental Monitoring",
+      "description": "We provide systems that monitor water quality, noise levels, and other environmental factors. These solutions help in managing natural resources, and complying with environmental regulations, contributing to a sustainable future.",
+      "icon": "home.png",
+      "items": [
+        {
+          "id": "environment-monitoring-system",
+          "name": "Environment Monitoring System",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "datis-ems",
+              "name": "DATIS EMS",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        },
+        {
+          "id": "water-leak-detector",
+          "name": "Water Leak Detector",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "vimpex-sn123",
+              "name": "VIMPEX SN123",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy-storage",
+      "name": "Energy Storage",
+      "description": "We offer state-of-the-art battery storage systems that store excess energy generated from renewable sources like solar and wind. These solutions ensure a reliable power supply, reduce energy costs, and promote the use of clean energy, helping to achieve energy efficiency and sustainability goals.",
+      "icon": "renewable-energy.png",
+      "items": [
+        {
+          "id": "battery-monitoring-system",
+          "name": "Battery Monitoring System",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "dfun-battery-sn123",
+              "name": "DFUN Battery SN123",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        },
+        {
+          "id": "lithium-smart-battery",
+          "name": "Lithium Smart Battery",
+          "description": "Lorem ipsum dolor sit amet consectetur",
+          "products": [
+            {
+              "id": "dfun-battery-sn234",
+              "name": "DFUN Battery SN234",
+              "description": "Lorem ipsum dolor sit amet consectetur",
+              "asset": "headset.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industrial-automation",
+      "name": "Industrial Automation",
+      "description": "We provide automated systems and robotics that perform repetitive tasks with precision and speed. These solutions improve product quality, reduce labor costs, and increase operational efficiency, making businesses more competitive in the global market.",
+      "icon": "engineer.png",
+      "items": []
+    }
+  ]
+}

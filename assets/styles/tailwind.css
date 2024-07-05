@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-9;
+  @apply text-neutral-2;
+  @apply text-xs;
+  @apply md:text-sm;
+  @apply lg:text-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-4xl;
+  @apply md:text-5xl;
+  @apply xl:text-6xl;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply md:text-4xl;
+  @apply xl:text-5xl;
+}
+
+h3 {
+  @apply text-2xl;
+  @apply md:text-3xl;
+  @apply xl:text-4xl;
+}
+
+h4 {
+  @apply text-xl;
+  @apply md:text-2xl;
+  @apply xl:text-3xl;
+}
+
+h5 {
+  @apply text-lg;
+  @apply md:text-xl;
+  @apply xl:text-2xl;
+}
+
+h6 {
+  @apply text-base;
+  @apply md:text-lg;
+  @apply xl:text-xl;
+}
+
+.button {
+  @apply inline-block;
+  @apply p-3;
+  @apply md:px-5;
+  @apply md:py-3;
+  @apply lg:px-5;
+  @apply lg:py-3;
+  @apply text-neutral-9;
+  @apply rounded-md;
+  @apply hover:text-neutral-2;
+  @apply hover:bg-white;
+}
+
+.primary {
+  @apply bg-primary;
+}
+
+.secondary {
+  @apply ring;
+  @apply ring-inset;
+  @apply ring-neutral-9;
+}
+
+/* Navbar */
+.router-link-active {
+  @apply font-medium;
+  @apply text-primary;
+}
+
+.scrolled {
+  @apply bg-neutral-2;
+  @apply bg-opacity-95;
+}
+
+/* Hover Fx */
+.underline-fx {
+  @apply relative;
+  @apply cursor-pointer;
+
+  &::after {
+    content: '';
+    @apply absolute;
+    @apply left-1/2;
+    @apply bottom-0;
+    @apply w-0;
+    @apply h-0.5;
+    background: transparent;
+    @apply -translate-x-1/2;
+    transition: 0.3s ease;
+  }
+  
+  &:hover::after {
+    @apply w-full;
+    @apply bg-primary;
+  }
+}
+
+.card {
+  @apply bg-white;
+  @apply border;
+  @apply border-neutral-7;
+}
