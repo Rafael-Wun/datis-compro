@@ -74,10 +74,6 @@ h6 {
 }
 
 /* Navbar */
-.router-link-active {
-  @apply font-medium;
-  @apply text-primary;
-}
 
 .scrolled {
   @apply bg-neutral-2;

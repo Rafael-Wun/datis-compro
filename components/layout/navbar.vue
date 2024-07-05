@@ -91,3 +91,10 @@
 		window.removeEventListener('scroll', handleScroll)
 	})
 </script>
+
+<style scoped>
+.router-link-active {
+  @apply font-medium;
+  @apply text-primary;
+}
+</style>

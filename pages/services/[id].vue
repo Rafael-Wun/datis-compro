@@ -28,7 +28,6 @@
   const { id } = useRoute().params
   const normalizedTexts = (raw) => {
     return raw
-      .toLowerCase()
       .split('-')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
