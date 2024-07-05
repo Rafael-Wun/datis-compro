@@ -51,7 +51,7 @@
             <NuxtLink
               v-for="(service, index) in services.items"
               :key="index"
-              :to="`/services/${service.url}`"
+              :to="`/services/${service.id}`"
               class="flex items-center gap-2 hover:text-primary"
             >
               <span class="icon-[ph--caret-double-right-bold]" />
@@ -70,9 +70,9 @@
         </div>
       </div>
       <div class="py-4 text-center border-t border-neutral-9">
-      &copy; 2024 Data Integrasi Semesta PT.
+      &copy; 2024 PT. Data Integrasi Semesta
 			<br>
-			All product brands are trademarks of Data Integrasi Semesta PT.
+			All product brands are trademarks of PT. Data Integrasi Semesta
 			<br>
 			All rights reserved.
       </div>

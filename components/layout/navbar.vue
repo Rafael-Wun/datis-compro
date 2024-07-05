@@ -39,7 +39,7 @@
         </ul>
       </div>
     </nav>
-    <div class="hidden group-hover:flex gap-5 mx-auto py-4 w-[80%]">
+    <div class="hidden md:group-hover:flex gap-5 mx-auto py-4 w-[80%]">
       <div
         v-for="solution in solutions.solutions" :key="solution.id"
         class="relative overflow-clip pb-3 w-full bg-neutral-9 rounded-md">
