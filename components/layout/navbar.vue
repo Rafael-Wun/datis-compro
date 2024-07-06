@@ -41,21 +41,21 @@
     </nav>
     <div class="hidden md:group-hover:flex gap-5 mx-auto py-4 w-[80%]">
       <div
-        v-for="solution in solutions.items" :key="solution.id"
+        v-for="category in category.items" :key="category.id"
         class="relative overflow-clip pb-3 w-full bg-neutral-9 rounded-md">
-        <!-- :to="`/solutions/${solution.id}`" -->
-        <div class="flex items-center mx-2 p-2 h-[72px] border-b border-neutral-7">
-          <h6 class="text-primary">{{ solution.name }}</h6>
-        </div>
-        <img :src="`/icon/${solution.icon}`" class="absolute -right-6 -bottom-6 size-40 opacity-30" />
+        <NuxtLink
+          :to="`/solutions/${category.id}`"
+          class="flex items-center mx-2 p-2 h-[72px] border-b border-neutral-7">
+          <h6 class="text-primary">{{ category.name }}</h6>
+        </NuxtLink>
+        <img :src="`/icon/${category.icon}`" class="absolute -right-6 -bottom-6 size-40 opacity-30" />
         <ul class="text-neutral-2">
           <li
-            v-for="item in productData(solution.id)" :key="item.id"
+            v-for="solution in solutionData(category.id)" :key="solution.id"
             class="flex justify-between items-center gap-1 mx-2 p-2 text-sm underline-fx">
-            <!-- :to="`/solutions/${solution.id}/${item.id}`" -->
-            <div>
-              {{ item.name }}
-            </div>
+            <NuxtLink :to="`/products/${solution.id}`">
+              {{ solution.name }}
+            </NuxtLink>
             <span class="icon-[ph--caret-right-bold] min-w-3 size-3" />
           </li>
         </ul>
@@ -64,12 +64,12 @@
   </header>
 </template>
 
-<script lang="ts" setup>
-  import solutions from '/static/solutions.json'
+<script setup>
   import category from '/static/category.json'
+  import solutions from '/static/solutions.json'
 
-  const productData = (solutionID) => {
-    return category.items.filter(item => item.category === solutionID)
+  const solutionData = (categoryID) => {
+    return solutions.items.filter(item => item.category === categoryID)
   }
 
   // Scroll Handler

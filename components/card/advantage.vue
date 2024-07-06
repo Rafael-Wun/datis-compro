@@ -1,6 +1,6 @@
 <template>
   <div class="card group flex flex-col justify-center items-center gap-3 aspect-square text-center hover:bg-primary rounded-md">
-    <div class='size-16 group-hover:hidden'>
+    <div class='size-12 lg:size-16 group-hover:hidden'>
 			<img :src="`/icon/${data.icon}`" />
 		</div>
     <div class="space-y-2 w-4/5">

@@ -1,7 +1,7 @@
 <template>
   <SectionDefault>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 xl:gap-10">
-      <CardProduct
+      <CardCatalog
         v-for="item in catalog.items" :key="item.id"
         :data="item" />
     </div>

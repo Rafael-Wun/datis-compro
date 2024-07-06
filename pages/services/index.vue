@@ -7,14 +7,15 @@
       {{ services.description }}
     </SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
-      <CardService
+      <CardDefault
         v-for="service in services.items" :key="service.id"
-        :data="service" />
+        :data="service"
+        path="services" />
     </div>
   </SectionDefault>
 </template>
 
-<script lang="ts" setup>
+<script setup>
   import services from '/static/services.json'
 
   useHead({

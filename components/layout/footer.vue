@@ -32,16 +32,15 @@
           </div>
         </div>
         <div class="flex flex-col items-center md:items-start gap-4 pt-5 md:pt-0 w-full md:w-auto border-t md:border-0">
-          <NuxtLink class="text-base md:text-lg font-medium">Solutions</NuxtLink>
+          <NuxtLink class="text-base md:text-lg font-medium">Our Solutions</NuxtLink>
           <div class="flex flex-col gap-4">
-            <!-- :to="`/solutions/${solution.id}`" -->
             <NuxtLink
-              v-for="solution in solutions.items"
-              :key="solution.id"
+              v-for="category in category.items" :key="category.id"
+              :to="`/solutions/${category.id}`"
               class="flex items-center gap-2 hover:text-primary"
             >
               <span class="icon-[ph--caret-double-right-bold]" />
-              {{ solution.name }}
+              {{ category.name }}
             </NuxtLink>
           </div>
         </div>
@@ -49,8 +48,7 @@
           <NuxtLink to="/services" class="text-base md:text-lg font-medium">Our Services</NuxtLink>
           <div class="flex flex-col gap-4">
             <NuxtLink
-              v-for="(service, index) in services.items"
-              :key="index"
+              v-for="service in services.items" :key="service.id"
               :to="`/services/${service.id}`"
               class="flex items-center gap-2 hover:text-primary"
             >
@@ -81,6 +79,6 @@
 </template>
 
 <script setup>
-  import solutions from '/static/solutions.json'
+  import category from '/static/category.json'
   import services from '/static/services.json'
 </script>

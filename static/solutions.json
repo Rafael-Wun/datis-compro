@@ -1,34 +1,67 @@
 {
   "items": [
     {
-      "id": "fire-safety",
-      "name": "Fire Safety",
-      "description": "We provide advanced fire detection systems, alarm monitoring systems, and fire suppression technologies. These solutions ensure early warning and quick response to any fire incidents, helping to minimize damage and ensure safety in residential, commercial, and industrial settings.",
-      "icon": "fire.png"
+      "id": "fire-detector",
+      "name": "Fire Detector",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "fire-safety",
+      "asset": ""
     },
     {
-      "id": "hazard-mitigation",
-      "name": "Hazard Mitigation",
-      "description": "We offer comprehensive strategies and technologies to identify potential hazards, assess risks, and implement measures to prevent or reduce the effects of these hazards. This includes gas detection and emergency preparedness plans to safeguard communities and businesses.",
-      "icon": "hazard-sign.png"
+      "id": "fire-suppression",
+      "name": "Fire Suppression",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "fire-safety",
+      "asset": ""
     },
     {
-      "id": "environtmental-monitoring",
-      "name": "Environmental Monitoring",
-      "description": "We provide systems that monitor water quality, noise levels, and other environmental factors. These solutions help in managing natural resources, and complying with environmental regulations, contributing to a sustainable future.",
-      "icon": "home.png"
+      "id": "fire-panel-monitoring-system",
+      "name": "Fire Panel Monitoring System",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "fire-safety",
+      "asset": ""
     },
     {
-      "id": "energy-storage",
-      "name": "Energy Storage",
-      "description": "We offer state-of-the-art battery storage systems that store excess energy generated from renewable sources like solar and wind. These solutions ensure a reliable power supply, reduce energy costs, and promote the use of clean energy, helping to achieve energy efficiency and sustainability goals.",
-      "icon": "renewable-energy.png"
+      "id": "gas-detector",
+      "name": "Gas Detector",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "hazard-mitigation",
+      "asset": ""
+    },
+    {
+      "id": "env-monitoring-system",
+      "name": "Environment Monitoring System",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "environtmental-monitoring",
+      "asset": ""
+    },
+    {
+      "id": "water-leak-detector",
+      "name": "Water Leak Detector",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "environtmental-monitoring",
+      "asset": ""
+    },
+    {
+      "id": "battery-monitoring-system",
+      "name": "Battery Monitoring System",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "energy-storage",
+      "asset": ""
+    },
+    {
+      "id": "lithium-smart-battery",
+      "name": "Lithium Smart Battery",
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "energy-storage",
+      "asset": ""
     },
     {
       "id": "industrial-automation",
       "name": "Industrial Automation",
-      "description": "We provide automated systems and robotics that perform repetitive tasks with precision and speed. These solutions improve product quality, reduce labor costs, and increase operational efficiency, making businesses more competitive in the global market.",
-      "icon": "engineer.png"
+      "description": "Lorem ipsum dolor sit amet consectetur",
+      "category": "industrial-automation",
+      "asset": ""
     }
   ]
 }
