@@ -10,17 +10,26 @@
         <Shortcut :data="category.items" title="Solutions" path="solutions" childPath="solutions" />
       </div>
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
+      <CardCatalog
+        v-for="catalog in catalogData" :key="catalog.id"
+        :data="catalog">
+      </CardCatalog>
+    </div>
+    <NuxtLink to="/contact-us"class="button button-hover primary">Contact Us Now</NuxtLink>
   </SectionDefault>
 </template>
 
 <script setup>
   import solutions from '/static/solutions.json'
   import category from '/static/category.json'
+  import catalog from '/static/catalog.json'
 
   const { id } = useRoute().params
   const solutionData = solutions.items.find(item => item.id === id)
   const solutionDetail = category.items.find(item => item.id === solutionData.category)
   const otherSolution = solutions.items.filter(item => item.category === solutionData.category)
+  const catalogData = catalog.items.filter(item => item.category === solutionData.id)
 
   const route = useRoute()
 	route.meta.title = solutionData.name
