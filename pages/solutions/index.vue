@@ -1,22 +1,21 @@
 <template>
   <SectionDefault>
     <SectionHeading
-      :header="category.header"
-      :title="category.title"
+      :header="categories.header"
+      :title="categories.title"
       class="mx-auto text-center">
-      {{ category.description }}
+      {{ categories.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
-      <CardDefault
-        v-for="category in category.items" :key="category.id"
-        :data="category"
-        path="solutions" />
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <CardCategory
+        v-for="category in categories.items" :key="category.id"
+        :data="category" />
     </div>
   </SectionDefault>
 </template>
 
 <script setup>
-  import category from '/static/category.json'
+  import categories from '/static/category.json'
 
   useHead({
     title: 'Solutions'

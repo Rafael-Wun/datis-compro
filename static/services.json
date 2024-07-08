@@ -10,16 +10,22 @@
       "icon": "technology.png"
     },
     {
-      "id": "software-development",
-      "name": "Software Development",
-      "description": "Elevating businesses through custom software development solutions, tailored to meet your unique needs and drive digital transformation.",
-      "icon": "coding.png"
-    },
-    {
       "id": "engineering-service",
       "name": "Engineering Service",
       "description": "Delivering excellence in engineering services, harnessing expertise and innovation to bring your visions to life.",
       "icon": "spanner.png"
+    },
+    {
+      "id": "iot-development",
+      "name": "IoT Development",
+      "description": "Unlocking the power of connectivity with innovative IoT development solutions for a smarter and interconnected world.",
+      "icon": "cloud-computing.png"
+    },
+    {
+      "id": "software-development",
+      "name": "Software Development",
+      "description": "Elevating businesses through custom software development solutions, tailored to meet your unique needs and drive digital transformation.",
+      "icon": "coding.png"
     },
     {
       "id": "product-design-development",
@@ -32,12 +38,6 @@
       "name": "IT Managed Service",
       "description": "Simplify your IT operations and maximize productivity with our comprehensive IT Managed Services.",
       "icon": "server.png"
-    },
-    {
-      "id": "iot-development",
-      "name": "IoT Development",
-      "description": "Unlocking the power of connectivity with innovative IoT development solutions for a smarter and interconnected world.",
-      "icon": "cloud-computing.png"
     }
   ]
 }

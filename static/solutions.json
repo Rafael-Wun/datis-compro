@@ -3,64 +3,31 @@
     {
       "id": "fire-detector",
       "name": "Fire Detector",
-      "description": "Lorem ipsum dolor sit amet consectetur",
       "category": "fire-safety",
       "asset": ""
     },
     {
       "id": "fire-suppression",
       "name": "Fire Suppression",
-      "description": "Lorem ipsum dolor sit amet consectetur",
       "category": "fire-safety",
       "asset": ""
     },
     {
       "id": "fire-panel-monitoring-system",
       "name": "Fire Panel Monitoring System",
-      "description": "Lorem ipsum dolor sit amet consectetur",
       "category": "fire-safety",
       "asset": ""
     },
     {
-      "id": "gas-detector",
-      "name": "Gas Detector",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "hazard-mitigation",
-      "asset": ""
-    },
-    {
-      "id": "env-monitoring-system",
+      "id": "environment-monitoring-sys",
       "name": "Environment Monitoring System",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "environtmental-monitoring",
+      "category": "environmental-monitoring",
       "asset": ""
     },
     {
-      "id": "water-leak-detector",
-      "name": "Water Leak Detector",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "environtmental-monitoring",
-      "asset": ""
-    },
-    {
-      "id": "battery-monitoring-system",
-      "name": "Battery Monitoring System",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "energy-storage",
-      "asset": ""
-    },
-    {
-      "id": "lithium-smart-battery",
-      "name": "Lithium Smart Battery",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "energy-storage",
-      "asset": ""
-    },
-    {
-      "id": "industrial-automation",
-      "name": "Industrial Automation",
-      "description": "Lorem ipsum dolor sit amet consectetur",
-      "category": "industrial-automation",
+      "id": "water-leak-detection-sys",
+      "name": "Water Leak Detection System",
+      "category": "environmental-monitoring",
       "asset": ""
     }
   ]

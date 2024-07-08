@@ -1,36 +1,30 @@
 {
   "header": "Our Solutions",
-  "title": "Comprehensive Solutions for Your Needs",
-  "description": "We have the expertise and resources to deliver outstanding solutions. Trust us to drive your success with our dedicated and comprehensive solutions.",
+  "title": "Tailored Solutions for You",
+  "description": "We offer system design and engineering, product selection, installation assistance, programming, commissioning, service, inspection and testing.",
   "items": [
+    {
+      "id": "building-tech",
+      "name": "Building Technology",
+      "description": "We will integrate advanced systems and solutions to improve the functionality, efficiency and sustainability of modern buildings.",
+      "icon": "technology.png"
+    },
     {
       "id": "fire-safety",
       "name": "Fire Safety",
-      "description": "We provide advanced fire detection systems, alarm monitoring systems, and fire suppression technologies. These solutions ensure early warning and quick response to any fire incidents, helping to minimize damage and ensure safety in residential, commercial, and industrial settings.",
-      "icon": "fire.png"
-    },
-    {
-      "id": "hazard-mitigation",
-      "name": "Hazard Mitigation",
-      "description": "We offer comprehensive strategies and technologies to identify potential hazards, assess risks, and implement measures to prevent or reduce the effects of these hazards. This includes gas detection and emergency preparedness plans to safeguard communities and businesses.",
+      "description": "We provide systems and practices to prevent fire hazards, with real-time fire detection and ensure safe evacuation in an emergency.",
       "icon": "hazard-sign.png"
     },
     {
-      "id": "environtmental-monitoring",
+      "id": "environmental-monitoring",
       "name": "Environmental Monitoring",
-      "description": "We provide systems that monitor water quality, noise levels, and other environmental factors. These solutions help in managing natural resources, and complying with environmental regulations, contributing to a sustainable future.",
-      "icon": "home.png"
+      "description": "We provide a real-time environmental monitoring system to ensure a healthy and safe environment for residents.",
+      "icon": "buildings.png"
     },
     {
-      "id": "energy-storage",
-      "name": "Energy Storage",
-      "description": "We offer state-of-the-art battery storage systems that store excess energy generated from renewable sources like solar and wind. These solutions ensure a reliable power supply, reduce energy costs, and promote the use of clean energy, helping to achieve energy efficiency and sustainability goals.",
-      "icon": "renewable-energy.png"
-    },
-    {
-      "id": "industrial-automation",
-      "name": "Industrial Automation",
-      "description": "We provide automated systems and robotics that perform repetitive tasks with precision and speed. These solutions improve product quality, reduce labor costs, and increase operational efficiency, making businesses more competitive in the global market.",
+      "id": "it-products",
+      "name": "IT Products",
+      "description": "We provide the latest IT products to support and enhance your business digital infrastructure.",
       "icon": "engineer.png"
     }
   ]

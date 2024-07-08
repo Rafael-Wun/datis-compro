@@ -1,15 +1,15 @@
 <template>
   <SectionDefault>
     <SectionHeading
-      :header="advantages.header"
-      :title="advantages.title"
+      :header="categories.header"
+      :title="categories.title"
       class="mx-auto text-center">
-      {{ advantages.description }}
+      {{ categories.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 xl:gap-10">
-      <CardAdvantage
-        v-for="(advantage, index) in advantages.items" :key="index"
-        :data="advantage" />
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+      <CardCategory
+        v-for="category in categories.items" :key="category.id"
+        :data="category" />
     </div>
   </SectionDefault>
   <div class="relative">
@@ -19,7 +19,7 @@
         <div class="hidden md:flex gap-5">
           <NuxtLink v-for="service in featuredServices" :key="service.id"
           :to="`/services/${service.id}`"
-          class="flex items-center gap-2 px-3 lg:px-5 py-2 lg:py-3 text-[9px] md:text-[11px] lg:text-sm font-medium text-neutral-2 bg-neutral-9 rounded-[4px] md:rounded-md">
+          class="flex items-center gap-2 px-3 lg:px-4 py-2 lg:py-3 text-xs lg:text-sm font-medium text-neutral-2 bg-neutral-9 rounded-[4px] md:rounded-md">
             {{ service.name }}
             <span class="icon-[ph--caret-right-bold] aspect-square w-2 md:w-4" />
           </NuxtLink>
@@ -27,29 +27,81 @@
         <SectionHeading
           title="Discover Our Services"
           :light="true">
-          More than just IoT, we offer a comprehensive range of IT services. Discover our diverse solutions tailored to meet your unique needs, driving success and satisfaction.
+          More than just IoT, we offer a comprehensive range of IT services. Discover our diverse categories tailored to meet your unique needs, driving success and satisfaction.
         </SectionHeading>
         <NuxtLink to="/services" class="button button-hover-rev secondary">View All Services</NuxtLink>
       </SectionDefault>
     </div>
   </div>
   <SectionDefault>
-    <SectionHeading
-      :header="achievements.header"
-      :title="achievements.title"
-      class="mx-auto text-center">
-      {{ achievements.description }}
-    </SectionHeading>
-    <div class="grid grid-cols-3 gap-[2px] bg-neutral-7">
-      <div
-        v-for="(item, index) in achievements.items" :key="index"
-        class="grid place-content-center gap-2 py-5 text-center bg-neutral-9">
-        <h4>{{ item.value }}</h4>
-        <p class="text-[9px] md:text-[11px] lg:text-xs font-medium text-neutral-6 uppercase">{{ item.label }}</p>
+    <div class="space-y-10">
+      <div class="flex items-center gap-10">
+        <div class="space-y-5 md:space-y-8">
+          <div class="inline-block px-3 lg:px-5 py-2 lg:py-3 text-[10px] md:text-[11px] lg:text-sm font-medium text-primary bg-primary bg-opacity-25 rounded-[4px] md:rounded-md">Our Records</div>
+          <div class="space-y-2">
+            <h4>Companies That Use Our Services</h4>
+            <p class="text-neutral-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quisquam quidem impedit.</p>
+          </div>
+        </div>
+        <div class="space-y-10 w-36 md:w-2/3">
+          <div class="w-full">
+            <Swiper
+              :modules="[SwiperAutoplay, SwiperPagination]"
+              :autoplay="{
+                delay: -1,
+                disableOnInteraction: false,
+                reverseDirection: false,
+              }"
+              :loop="true"
+              :navigation="false"
+              :centered-slides="true"
+              :space-between="40"
+              :speed="4000"
+              :breakpoints="breakpoints">
+              <SwiperSlide v-for="client in clients" :key="client.name">
+                <div class="flex justify-center items-center">
+                  <img :src="`/client/${client.asset}`" class="w-auto h-12 xl:h-16 object-contain">
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div class="w-full">
+            <Swiper
+              :modules="[SwiperAutoplay, SwiperPagination]"
+              :autoplay="{
+                delay: -1,
+                disableOnInteraction: false,
+                reverseDirection: true,
+              }"
+              :loop="true"
+              :navigation="false"
+              :centered-slides="true"
+              :space-between="40"
+              :speed="4000"
+              :breakpoints="breakpoints">
+              <SwiperSlide v-for="client in clients" :key="client.name">
+                <div class="flex justify-center items-center">
+                  <img :src="`/client/${client.asset}`" class="w-auto h-12 xl:h-16 object-contain">
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="text-center">
-      <NuxtLink to="/about-us" class="button button-hover primary">Get to Know Us</NuxtLink>
+      <div class="grid grid-cols-3 py-6 bg-white border border-neutral-7 rounded-md">
+        <div class="flex flex-col items-center gap-2">
+          <h5 class="text-primary">6+ Years</h5>
+          <p class="font-medium text-neutral-6 uppercase">experiences</p>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <h5 class="text-primary">200+</h5>
+          <p class="font-medium text-neutral-6 uppercase">projects</p>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <h5 class="text-primary">200+</h5>
+          <p class="font-medium text-neutral-6 uppercase">clients</p>
+        </div>
+      </div>
     </div>
   </SectionDefault>
   <div class="relative">
@@ -66,10 +118,24 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-  import advantages from '/static/advantages.json'
+<script setup>
+  import categories from '/static/category.json'
   import services from '/static/services.json'
-  import achievements from '/static/achievements.json'
+  import clients from '/static/clients.json'
+
+  const breakpoints = {
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    }
+  }
 
   useHead({
     title: 'Home'

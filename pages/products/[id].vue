@@ -1,44 +1,39 @@
 <template>
   <SectionDefault>
-    <div class="flex flex-col lg:flex-row gap-5 xl:gap-10">
+    <div class="flex flex-col md:flex-row gap-5 md:gap-10">
       <div class="space-y-5 w-full">
-        <h4>{{ solutionData.name }}</h4>
-        <ContentDoc :path="`/solutions/${id}`" />
+        <h4>{{ catalogData.name }}</h4>
+        <p>{{ catalogData.description }}</p>
       </div>
-      <div class="flex flex-col gap-5 xl:gap-10">
-        <Shortcut :data="otherSolution" :title="solutionDetail.name" path="solutions" childPath="products" />
-        <Shortcut :data="category.items" title="Solutions" path="solutions" childPath="solutions" />
+      <div class="flex md:flex-col gap-5 xl:gap-10">
+        <Shortcut :data="otherCatalog" :title="solutionDetail.name" path="products" childPath="products" />
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
-      <CardCatalog
-        v-for="catalog in catalogData" :key="catalog.id"
-        :data="catalog">
-      </CardCatalog>
+    <div class="flex flex-col gap-5">
+      <div class="space-x-1">
+        <span class="font-medium">Learn more about: </span>
+        <NuxtLink :to="`/solutions/${solutionDetail.category}/${solutionDetail.id}`" class="underline-fx p-1 text-primary font-medium">{{ solutionDetail.name }}</NuxtLink>
+      </div>
+      <div>
+        <NuxtLink to="/contact-us"class="button button-hover primary">Contact Us Now</NuxtLink>
+      </div>
     </div>
-    <NuxtLink to="/contact-us"class="button button-hover primary">Contact Us Now</NuxtLink>
   </SectionDefault>
 </template>
 
 <script setup>
-  import solutions from '/static/solutions.json'
-  import category from '/static/category.json'
   import catalog from '/static/catalog.json'
+  import solutions from '/static/solutions.json'
 
   const { id } = useRoute().params
-  const solutionData = solutions.items.find(item => item.id === id)
-  const solutionDetail = category.items.find(item => item.id === solutionData.category)
-  const otherSolution = solutions.items.filter(item => item.category === solutionData.category)
-  const catalogData = catalog.items.filter(item => item.category === solutionData.id)
+  const catalogData = catalog.items.find(item => item.id === id)
+  const solutionDetail = solutions.items.find(item => item.id === catalogData.category)
+  const otherCatalog = catalog.items.filter(item => item.category === solutionDetail.id)
 
   const route = useRoute()
-	route.meta.title = solutionData.name
+  route.meta.title = catalogData.name
 
   useHead({
-    title: solutionData.name
+    title: catalogData.name
   })
 </script>
-
-<style>
-
-</style>

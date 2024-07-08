@@ -46,7 +46,7 @@ h5 {
 
 h6 {
   @apply text-base;
-  @apply md:text-lg;
+  @apply lg:text-lg;
   @apply xl:text-xl;
 }
 

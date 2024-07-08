@@ -1,8 +1,8 @@
 <template>
-  <div class="space-y-5 md:space-y-10 w-4/5 md:w-8/12 lg:w-[600px]">
+  <div class="space-y-5 md:space-y-8 w-4/5 md:w-8/12 lg:w-[600px]">
     <div
       v-if="header"
-      class="inline-block px-3 lg:px-5 py-2 lg:py-3 text-[9px] md:text-[11px] lg:text-sm font-medium text-primary bg-primary bg-opacity-25 rounded-[4px] md:rounded-md">
+      class="inline-block px-3 lg:px-5 py-2 lg:py-3 text-[10px] md:text-[11px] lg:text-sm font-medium text-primary bg-primary bg-opacity-25 rounded-[4px] md:rounded-md">
       {{ header }}
     </div>
     <div class="space-y-2">

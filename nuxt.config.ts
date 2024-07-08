@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     'nuxt-swiper',
-    "@nuxt/image"
+    '@nuxt/image',
   ],
   app: {
     head: {

@@ -2,7 +2,7 @@
   <SectionDefault>
     <div class="space-y-5 w-full">
       <h4>{{ categoryData.name }}</h4>
-      <p>{{ categoryData.description }}</p>
+      <p><ContentDoc :path="`/category/${id}`" /></p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
       <CardSolution

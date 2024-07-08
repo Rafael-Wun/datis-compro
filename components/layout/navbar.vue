@@ -12,34 +12,32 @@
           <path class="fill-neutral-9" fill-rule="evenodd" clip-rule="evenodd" d="M245.564 95.3163H276.093V125.845H245.564V95.3163Z" />
         </svg>
       </NuxtLink>
-      <button @click="toggleMenu" class="block xl:hidden">
+      <button @click="toggleMenu" class="block 2xl:hidden">
         <span class="icon-[ph--list-bold] size-5 md:size-7 text-neutral-9" :class="showMenu ? 'hidden' : 'block'" />
         <span class="icon-[ph--x-bold] size-5 md:size-7 text-neutral-9" :class="showMenu ? 'block' : 'hidden'" />
       </button>
       <div
         v-if="showMenu"
-        class="absolute top-full left-0 px-4 md:px-8 pb-6 w-full bg-neutral-2 bg-opacity-95">
+        class="absolute top-full left-0 px-4 md:px-8 xl:px-32 pb-6 w-full bg-neutral-2 bg-opacity-95">
         <ul class="flex flex-col gap-4 h-fit text-neutral-9">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
-          <li><NuxtLink to="/solutions">Solutions</NuxtLink></li>
+          <li><NuxtLink to="/solutions">Products & Solutions</NuxtLink></li>
           <li><NuxtLink to="/services">Services</NuxtLink></li>
           <li><NuxtLink to="/contact-us">Contact Us</NuxtLink></li>
         </ul>
       </div>
-      <div class="hidden xl:block">
+      <div class="hidden 2xl:block">
         <ul class="flex gap-10 h-fit text-neutral-9">
           <li><NuxtLink to="/" class="hover:text-primary">Home</NuxtLink></li>
           <li><NuxtLink to="/about-us" class="hover:text-primary">About Us</NuxtLink></li>
-          <li><NuxtLink to="/products" class="hover:text-primary">Products</NuxtLink></li>
-          <li><NuxtLink to="/solutions" class="hover:text-primary">Solutions</NuxtLink></li>
+          <li><NuxtLink to="/solutions" class="hover:text-primary">Products & Solutions</NuxtLink></li>
           <li><NuxtLink to="/services" class="hover:text-primary">Services</NuxtLink></li>
           <li><NuxtLink to="/contact-us" class="hover:text-primary">Contact Us</NuxtLink></li>
         </ul>
       </div>
     </nav>
-    <div class="hidden md:group-hover:flex gap-5 mx-auto py-4 w-[80%]">
+    <div class="hidden 2xl:group-hover:flex gap-5 mx-auto py-4 w-4/5">
       <div
         v-for="category in category.items" :key="category.id"
         class="relative overflow-clip pb-3 w-full bg-neutral-9 rounded-md">
@@ -53,7 +51,7 @@
           <li
             v-for="solution in solutionData(category.id)" :key="solution.id"
             class="flex justify-between items-center gap-1 mx-2 p-2 text-sm underline-fx">
-            <NuxtLink :to="`/products/${solution.id}`">
+            <NuxtLink :to="`/solutions/${category.id}/${solution.id}`">
               {{ solution.name }}
             </NuxtLink>
             <span class="icon-[ph--caret-right-bold] min-w-3 size-3" />

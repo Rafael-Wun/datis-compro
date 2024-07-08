@@ -1,45 +1,48 @@
 <template>
   <SectionDefault>
     <div>
-      <Swiper
-        :modules="[SwiperPagination]"
-        :slides-per-view="6"
-        spaceBetween="10"
-        class="border-b border-neutral-7"
-        :breakpoints="swiperBreakpoints">
-        <SwiperSlide>
+      <div class="px-2 border-b border-neutral-7">
+        <Swiper
+          :modules="[SwiperPagination]"
+          :slides-per-view="3"
+          :centered-slides="false"
+          :space-between="16"
+          :breakpoints="breakpoints">
+          <SwiperSlide>
+            <label
+              class="cursor-pointer"
+              :class="{ 'active': selectedCategory === '' }">
+              <input 
+                type="radio"  
+                name="category" 
+                value=""
+                v-model="selectedCategory" 
+                class="hidden cursor-pointer">
+              All Category
+            </label>
+          </SwiperSlide>
+          <SwiperSlide v-for="item in category.items" :key="item.id" class="pb-2">
           <label
             class="cursor-pointer"
-            :class="{ 'text-primary': selectedCategory === '' }">
+            :class="{ 'active': selectedCategory === item.id }">
             <input 
-              type="radio"  
+              type="radio" 
               name="category" 
-              value=""
+              :value="item.id"
               v-model="selectedCategory" 
               class="hidden cursor-pointer">
-            All Category
+            {{ item.name }}
           </label>
-        </SwiperSlide>
-        <SwiperSlide v-for="item in category.items" :key="item.id" class="pb-2">
-        <label
-          class="cursor-pointer" :class="{ 'text-primary': selectedCategory === item.id }">
-          <input 
-            type="radio" 
-            name="category" 
-            :value="item.id"
-            v-model="selectedCategory" 
-            class="hidden cursor-pointer">
-          {{ item.name }}
-        </label>
-        </SwiperSlide>
-      </Swiper>
-      <div class="flex gap-10">
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <div class="flex gap-5 xl:gap-10">
         <div 
           v-if="selectedCategory"
-          class="flex flex-col gap-10 border-r border-neutral-7 pt-10 pr-6 w-48 lg:min-w-60">
+          class="flex flex-col gap-10 border-r border-neutral-7 pt-10 pr-6 min-w-36 w-36 lg:min-w-60">
           <label
             class="cursor-pointer"
-            :class="{ 'text-primary': selectedSolution === '' }">
+            :class="{ 'active': selectedSolution === '' }">
             <input 
               type="radio"  
               name="category" 
@@ -51,7 +54,7 @@
           <label
             class="cursor-pointer" 
             v-for="item in filteredSolutions" :key="item.id"
-            :class="{ 'text-primary': selectedSolution === item.id }">
+            :class="{ 'active': selectedSolution === item.id }">
             <input 
               type="radio" 
               name="solutions" 
@@ -61,7 +64,9 @@
             {{ item.name }}
           </label>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-10 pt-10">
+        <div 
+          class="grid md:grid-cols-3 gap-5 xl:gap-10 pt-10 w-full"
+          :class="selectedCategory ? 'grid-cols-1' : 'grid-cols-2'">
           <CardCatalog
             v-for="item in filteredCatalog" :key="item.id"
             :data="item" />
@@ -112,12 +117,24 @@
   const route = useRoute()
 	route.meta.title = 'Products'
 
-  const swiperBreakpoints = {
+  const breakpoints = {
     640: {
       slidesPerView: 3,
     },
     768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1024: {
       slidesPerView: 6,
+      spaceBetween: 20
     }
   }
 </script>
+
+<style scoped>
+.active {
+  @apply text-primary;
+  @apply font-semibold;
+}
+</style>

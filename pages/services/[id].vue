@@ -1,6 +1,6 @@
 <template>
   <SectionDefault>
-    <div class="flex flex-col lg:flex-row gap-5 xl:gap-10">
+    <div class="flex flex-col lg:flex-row gap-5 xl:gap-10 w-full">
       <div class="space-y-5 w-full">
         <h4>{{ serviceData.name }}</h4>
         <ContentDoc :path="`/services/${id}`" />

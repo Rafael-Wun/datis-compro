@@ -1,39 +1,10 @@
 {
   "items": [
     {
-      "id": "recuelogic",
-      "name": "RescueLogic",
-      "description": "software that lets you monitor all of your fire alarms, security systems, and building controls from a standard personal computer.",
-      "category": "env-monitoring-system",
-      "asset": ""
-    },
-    {
-      "id": "datis-monitoring-system",
-      "name": "DATIS Monitoring System",
-      "description": "Data Acquisition and Telemetry Information System",
-      "category": "env-monitoring-system",
-      "asset": ""
-    },
-    {
-      "id": "apilogik-system",
+      "id": "apilogik-watch",
       "name": "Apilogik Watch",
-      "description": "Cloud-based fire panel monitoring system",
       "category": "fire-panel-monitoring-system",
-      "asset": ""
-    },
-    {
-      "id": "hydrosense",
-      "name": "Hydrosense",
-      "description": "Water leak detection is setting new industry standards for protection of systems and infrastructure against water damage.",
-      "category": "water-leak-detector",
-      "asset": ""
-    },
-    {
-      "id": "brainchild",
-      "name": "Brainchild Electronic",
-      "description": "Human Machine Interface, Operator panels, IO Modules, Temperature Controllers, Paperless Recorder, PID Controller, GSM Controller, Paperless Recorders",
-      "category": "industrial-automation",
-      "asset": ""
+      "asset": "apilogik.png"
     }
   ]
 }
