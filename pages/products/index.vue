@@ -109,10 +109,6 @@
   watch(selectedCategory, () => {
     selectedSolution.value = ''
   })
-
-  useHead({
-    title: 'Products'
-  })
   
   const route = useRoute()
 	route.meta.title = 'Products'

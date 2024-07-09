@@ -20,7 +20,4 @@
   const route = useRoute()
 	route.meta.title = serviceData.name
 
-  useHead({
-    title: serviceData.name
-  })
 </script>

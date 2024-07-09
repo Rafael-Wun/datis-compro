@@ -16,10 +16,6 @@
 
 <script setup>
   import categories from '/static/category.json'
-
-  useHead({
-    title: 'Solutions'
-  })
   
   const route = useRoute()
 	route.meta.title = 'Solutions'

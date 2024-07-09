@@ -59,10 +59,6 @@
 <script setup>
   import overview from '/static/overview.json'
 
-  useHead({
-    title: 'About Us'
-  })
-  
   const route = useRoute()
 	route.meta.title = 'About Us'
 </script>

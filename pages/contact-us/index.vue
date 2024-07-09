@@ -56,11 +56,7 @@
   </SectionDefault>
 </template>
 
-<script lang="ts" setup>
-  useHead({
-    title: 'Contact Us'
-  })
-
+<script setup>
   const route = useRoute()
   route.meta.title = 'Contact Us'
 </script>

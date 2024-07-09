@@ -24,8 +24,4 @@
 
   const route = useRoute()
 	route.meta.title = categoryData.name
-
-  useHead({
-    title: categoryData.name
-  })
 </script>

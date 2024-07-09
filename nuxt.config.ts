@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      titleTemplate: 'DATIS - %s',
+      titleTemplate: 'PT. Data Integrasi Semesta - Your Trusted Partner',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       meta: [
         {
           name: 'description',

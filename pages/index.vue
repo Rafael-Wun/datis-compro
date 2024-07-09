@@ -137,9 +137,5 @@
     }
   }
 
-  useHead({
-    title: 'Home'
-  })
-
   const featuredServices = services.items.slice(0, 3)
 </script>

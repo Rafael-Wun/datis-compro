@@ -35,10 +35,6 @@
 
   const route = useRoute()
 	route.meta.title = solutionData.name
-
-  useHead({
-    title: solutionData.name
-  })
 </script>
 
 <style>
