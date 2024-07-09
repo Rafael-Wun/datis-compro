@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="flex md:flex-col gap-5 xl:gap-10">
-        <Shortcut :data="otherSolution" :title="solutionDetail.name" path="solutions" childPath="products" />
+        <Shortcut :data="otherSolution" :title="solutionDetail.name" path="solutions" :childPath="`solutions/${solutionDetail.id}`" />
         <Shortcut :data="category.items" title="Solutions" path="solutions" childPath="solutions" />
       </div>
     </div>

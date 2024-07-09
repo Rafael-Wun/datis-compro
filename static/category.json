@@ -16,9 +16,9 @@
       "icon": "hazard-sign.png"
     },
     {
-      "id": "environmental-monitoring",
-      "name": "Environmental Monitoring",
-      "description": "We provide a real-time environmental monitoring system to ensure a healthy and safe environment for residents.",
+      "id": "security-sys",
+      "name": "Security Systems",
+      "description": "We offer advanced surveillance solutions with high-definition video monitoring and real-time alerts, ensuring constant vigilance.",
       "icon": "buildings.png"
     },
     {

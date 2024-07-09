@@ -21,13 +21,13 @@
     {
       "id": "environment-monitoring-sys",
       "name": "Environment Monitoring System",
-      "category": "environmental-monitoring",
+      "category": "building-tech",
       "asset": ""
     },
     {
       "id": "water-leak-detection-sys",
       "name": "Water Leak Detection System",
-      "category": "environmental-monitoring",
+      "category": "building-tech",
       "asset": ""
     }
   ]

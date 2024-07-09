@@ -8,7 +8,7 @@
           We'd love to hear from you! Reach out to us for any inquiries, support, or to learn more about how we can help your business succeed.
         </SectionHeading>
         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3 xl:space-y-6">
-          <input type="hidden" name="access_key" value="bc554548-ef0b-40ac-bb95-9b9c90f4f718">
+          <input type="hidden" name="access_key" value="9ddb2138-5376-41a9-95d2-f759a1dbd5bd">
           <div class="grid gap-2">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" class="px-3 py-2 border border-neutral-7 rounded-md" />
