@@ -1,6 +1,6 @@
 <template>
   <footer class="pt-10 text-xs lg:text-sm text-neutral-9 bg-neutral-2">
-    <div class="space-y-10 mx-4 md:mx-8 w-auto">
+    <div class="space-y-10 mx-4 md:mx-auto md:w-4/5">
       <div class="flex flex-col md:flex-row md:flex-wrap-reverse xl:flex-nowrap md:justify-between gap-10">
         <div class="space-y-5">
           <span class="text-base md:text-lg font-medium">Contact Info</span>

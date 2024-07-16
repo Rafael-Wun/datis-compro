@@ -17,12 +17,8 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content: 'IoT company that offer a wide range of customizable solutions to meet your needs, including building technology, fire safety, security, and other IT products. Our company specializes in advanced technologies such as Smart Building Solutions, Data Center Infrastructure, Control Room Infrastructure, and Interactive Multimedia Technology. Discover how our innovative solutions can enhance your operations and ensure top-notch safety and efficiency.',
+          content: 'We specialize in building services and fire safety engineeringwe are a leading system integrator specializing in building services and fire safety engineering, utilizing the latest technologies and IoT solutions. we provide a wide range of cutting-edge building technologies, fire safety, security, and IT products. offering comprehensive value-added services, XYZ provides ICT system integration, software development, consulting, implementation, and operational support.',
         },
-        {
-          name: 'keywords',
-          content: 'Smart building solutions, Data center and control room infrastructure, Interactive multimedia technology, Fire safety, IT products'
-        }
       ],
     }
   },

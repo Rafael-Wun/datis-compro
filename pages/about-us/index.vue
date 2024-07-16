@@ -1,7 +1,6 @@
 <template>
   <SectionDefault>
-    <div class="flex gap-8">
-      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block w-72 xl:w-96 object-cover rounded-md">
+    <div class="flex gap-10">
       <div class="space-y-5 md:space-y-8">
         <div class="inline-block px-3 lg:px-5 py-2 lg:py-3 text-[10px] md:text-[11px] lg:text-sm font-medium text-primary bg-primary bg-opacity-25 rounded-[4px] md:rounded-md">{{ overview.header }}</div>
         <div class="space-y-2">
@@ -9,6 +8,7 @@
           <p class="text-neutral-5"><ContentDoc path="overview" /></p>
         </div>
       </div>
+      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block w-64 xl:w-80 3xl:w-[480px] object-cover rounded-md" style="aspect-ratio: 3/4;" />
     </div>
   </SectionDefault>
   <div class="bg-primary">
@@ -34,13 +34,19 @@
   <SectionDefault>
     <SectionHeading
       header="Core Values"
-      title="What We Stand For"
-      class="mx-auto text-center"></SectionHeading>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-2">
-        <CardValue
-          v-for="value in overview.values" :key="value.id"
-          :data="value" />
+      title="What We Stand For?"
+      class="mx-auto text-center">
+      Our values define who we are and guide every decision we make, ensuring we deliver exceptional solutions and build lasting relationships.
+    </SectionHeading>
+    <div class="flex flex-wrap justify-center gap-10">
+      <div 
+        v-for="(value, index) in overview.values" :key="index"
+        class="card flex flex-col justify-center items-center gap-4 px-6 size-80 text-center rounded-md">
+        <img :src="`/icon/${value.asset}`" class="size-16" />
+        <h5>{{ value.name }}</h5>
+        <span class="text-neutral-6">{{ value.description }}</span>
       </div>
+    </div>
   </SectionDefault>
   <div class="relative">
     <img src="@/assets/img/contact-bg.jpg" class="hidden md:block absolute z-0 top-0 left-0 w-1/2 h-full object-cover">
@@ -58,6 +64,15 @@
 
 <script setup>
   import overview from '/static/overview.json'
+
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: 'Learn more about DATIS, a pioneer in smart building technology, fire safety, security systems, and interactive multimedia technology.',
+      },
+    ],
+  })
 
   const route = useRoute()
 	route.meta.title = 'About Us'

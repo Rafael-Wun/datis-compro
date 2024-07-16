@@ -27,6 +27,15 @@
   import category from '/static/category.json'
   import catalog from '/static/catalog.json'
 
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: solutionData.description,
+      },
+    ],
+  });
+
   const { id } = useRoute().params
   const solutionData = solutions.items.find(item => item.id === id)
   const solutionDetail = category.items.find(item => item.id === solutionData.category)

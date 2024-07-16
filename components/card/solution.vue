@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`/solutions/${categoryData.id}/${props.data.id}`">
-    <div class="grid place-content-center p-5 bg-neutral-9 border border-neutral-7 rounded-md">
+    <div class="grid place-content-center p-5 bg-white border border-neutral-7 rounded-md">
       <img :src="`/category/${props.data.asset}`" class="aspect-square w-full object-cover">
     </div>
     <div class="space-y-1 p-3">

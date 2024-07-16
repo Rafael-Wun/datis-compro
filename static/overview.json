@@ -6,23 +6,28 @@
   "values": [
     {
       "name": "Collaboration",
-      "description": "Working together effectively to achieve shared goals."
+      "description": "Working together effectively to achieve shared goals.",
+      "asset": "teamwork.png"
     },
     {
       "name": "Innovation",
-      "description": "Encouraging creativity, experimentation, and embracing change."
+      "description": "Encouraging creativity, experimentation, and embracing change.",
+      "asset": "innovation.png"
     },
     {
       "name": "Agility",
-      "description": "Responding quickly and adapting to new challenges and opportunities."
+      "description": "Responding quickly and adapting to new challenges and opportunities.",
+      "asset": "stopwatch.png"
     },
     {
       "name": "Trust",
-      "description": "Building long-term relationships based on reliability and transparency"
+      "description": "Building long-term relationships based on reliability and transparency",
+      "asset": "hands.png"
     },
     {
       "name": "Learning",
-      "description": "Fostering a culture of continuous learning and development."
+      "description": "Fostering a culture of continuous learning and development.",
+      "asset": "inspection.png"
     }
   ]
 }

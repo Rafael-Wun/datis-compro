@@ -6,7 +6,7 @@
       class="mx-auto text-center">
       {{ categories.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 lg:gap-5">
       <CardCategory
         v-for="category in categories.items" :key="category.id"
         :data="category" />
@@ -122,6 +122,15 @@
   import categories from '/static/category.json'
   import services from '/static/services.json'
   import clients from '/static/clients.json'
+
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: 'Discover cutting-edge smart building solutions, including fire safety, security systems, and data center infrastructure with DATIS',
+      },
+    ],
+  })
 
   const breakpoints = {
     640: {

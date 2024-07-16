@@ -16,6 +16,15 @@
   import category from '/static/category.json'
   import solutions from '/static/solutions.json'
 
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: categoryData.description,
+      },
+    ],
+  });
+
   const { id } = useRoute().params
   const categoryData = category.items.find(item => item.id === id)
   const solutionData = (categoryID) => {

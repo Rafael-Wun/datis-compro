@@ -17,7 +17,7 @@
   </div>
   <div v-else>
     <img src="@/assets/img/hero-bg.jpg" class="absolute inset-0 z-0 w-full h-[400px] md:h-[520px] lg:h-[640px] object-cover brightness-50" />
-    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 w-auto xl:w-4/5 h-[400px] md:h-[520px] lg:h-[640px]">
+    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 xl:pb-32 w-auto xl:w-4/5 h-[400px] md:h-[520px] lg:h-[640px]">
       <!-- <NuxtLink to="/services">
         <div class="hidden md:flex items-center gap-1 w-min p-1 pr-2 bg-neutral-9 text-xs whitespace-nowrap rounded-md"><span class="bg-primary p-1 text-neutral-9 rounded-[4px]">New!</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="icon-[ph--caret-right-bold]" /></div>
       </NuxtLink> -->

@@ -13,7 +13,7 @@
       "id": "fire-safety",
       "name": "Fire Safety",
       "description": "We provide systems and practices to prevent fire hazards, with real-time fire detection and ensure safe evacuation in an emergency.",
-      "icon": "hazard-sign.png"
+      "icon": "fire.png"
     },
     {
       "id": "security-sys",

@@ -14,10 +14,18 @@
 <script setup>
   import services from '/static/services.json'
 
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: serviceData.description,
+      },
+    ],
+  });
+
   const { id } = useRoute().params
   const serviceData = services.items.find(item => item.id === id)
 
   const route = useRoute()
 	route.meta.title = serviceData.name
-
 </script>

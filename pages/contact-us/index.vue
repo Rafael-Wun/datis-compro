@@ -57,6 +57,15 @@
 </template>
 
 <script setup>
+  definePageMeta({
+    meta: [
+      {
+        name: 'description',
+        content: 'Get in touch with DATIS for innovative smart building solutions, fire safety, security systems, and more IT products.',
+      },
+    ],
+  })
+
   const route = useRoute()
   route.meta.title = 'Contact Us'
 </script>
