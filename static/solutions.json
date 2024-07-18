@@ -1,33 +1,31 @@
 {
   "items": [
     {
-      "id": "fire-detector",
-      "name": "Fire Detector",
-      "category": "fire-safety",
-      "asset": ""
-    },
-    {
       "id": "fire-suppression",
       "name": "Fire Suppression",
       "category": "fire-safety",
+      "description": "lorem ipsum dolor sit amet",
       "asset": ""
     },
     {
       "id": "fire-panel-monitoring-system",
       "name": "Fire Panel Monitoring System",
       "category": "fire-safety",
+      "description": "lorem ipsum dolor sit amet",
       "asset": ""
     },
     {
       "id": "environment-monitoring-sys",
       "name": "Environment Monitoring System",
       "category": "building-tech",
+      "description": "lorem ipsum dolor sit amet",
       "asset": ""
     },
     {
       "id": "water-leak-detection-sys",
       "name": "Water Leak Detection System",
       "category": "building-tech",
+      "description": "lorem ipsum dolor sit amet",
       "asset": ""
     }
   ]

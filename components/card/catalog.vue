@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/solutions/${solutionData.category}/${solutionData.id}/${props.data.id}`">
+  <NuxtLink :to="`/category/${solutionData.category}/${solutionData.id}/${props.data.id}`">
     <div class="grid place-content-center p-5 bg-white border border-neutral-7 rounded-md">
       <img :src="`/catalog/${props.data.asset}`" class="aspect-square w-full object-contain">
     </div>

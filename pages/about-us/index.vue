@@ -8,7 +8,7 @@
           <p class="text-neutral-5"><ContentDoc path="overview" /></p>
         </div>
       </div>
-      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block w-64 xl:w-80 3xl:w-[480px] object-cover rounded-md" style="aspect-ratio: 3/4;" />
+      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block w-64 xl:w-80 3xl:w-[480px] max-h-96 object-cover rounded-md" style="aspect-ratio: 3/4;" />
     </div>
   </SectionDefault>
   <div class="bg-primary">
@@ -38,11 +38,11 @@
       class="mx-auto text-center">
       Our values define who we are and guide every decision we make, ensuring we deliver exceptional solutions and build lasting relationships.
     </SectionHeading>
-    <div class="flex flex-wrap justify-center gap-10">
+    <div class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10 2xl:gap-12 3xl:gap-9 4xl:gap-16">
       <div 
         v-for="(value, index) in overview.values" :key="index"
-        class="card flex flex-col justify-center items-center gap-4 px-6 size-80 text-center rounded-md">
-        <img :src="`/icon/${value.asset}`" class="size-16" />
+        class="card flex flex-col justify-center items-center gap-4 px-6 aspect-square w-full md:size-72 2xl:size-80 3xl:size-[360px] 4xl:size-96 text-center rounded-md">
+        <img :src="`/icon/${value.asset}`" class="size-16 md:size-12 xl:size-16" />
         <h5>{{ value.name }}</h5>
         <span class="text-neutral-6">{{ value.description }}</span>
       </div>

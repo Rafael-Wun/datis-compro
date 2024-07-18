@@ -1,11 +1,11 @@
 <template>
-  <NuxtLink :to="`/solutions/${categoryData.id}/${props.data.id}`">
+  <NuxtLink :to="`/category/${categoryData.id}/${props.data.id}`">
     <div class="grid place-content-center p-5 bg-white border border-neutral-7 rounded-md">
       <img :src="`/category/${props.data.asset}`" class="aspect-square w-full object-cover">
     </div>
     <div class="space-y-1 p-3">
       <h5 class="overflow-hidden text-ellipsis whitespace-nowrap">{{ props.data.name }}</h5>
-      <p class="text-neutral-6 line-clamp-3"><ContentDoc :path="`/solutions/${props.data.id}`" /></p>
+      <p class="text-neutral-6 line-clamp-3">{{ props.data.description }}</p>
     </div>
   </NuxtLink>
 </template>

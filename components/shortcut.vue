@@ -9,7 +9,7 @@
       <li
         v-for="item in data" :key="item.id"
         class="px-5 py-3 whitespace-nowrap">
-        <NuxtLink :to="`/${childPath}/${item.id}`" class="hover:text-primary">{{ item.name }}</NuxtLink>
+        <NuxtLink :to="getPath(item.id, )" class="hover:text-primary">{{ item.name }}</NuxtLink>
       </li>
     </ul>
   </div>
@@ -23,6 +23,12 @@
     childPath: String,
   })
 
+  const getPath = (id, childId) => {
+    if (props.childPath) {
+      return `/${props.path}/${id}/${props.childPath}/${props.childId}`
+    }
+    return `/${props.path}/${id}`
+  }
 </script>
 
 <style scoped>

@@ -14,18 +14,22 @@
 <script setup>
   import services from '/static/services.json'
 
-  definePageMeta({
-    meta: [
-      {
-        name: 'description',
-        content: serviceData.description,
-      },
-    ],
-  });
-
-  const { id } = useRoute().params
-  const serviceData = services.items.find(item => item.id === id)
+  const serviceData = computed(() => {
+    const { id } = useRoute().params
+    return services.items.find(item => item.id === id)
+  })
 
   const route = useRoute()
-	route.meta.title = serviceData.name
+  
+  watch(serviceData, (newServiceData) => {
+    useHead({
+      meta: [
+        {
+          name: 'description',
+          content: newServiceData.description,
+        },
+      ],
+    })
+    route.meta.title = newServiceData.name
+  }, { immediate: true })
 </script>

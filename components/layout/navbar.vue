@@ -22,7 +22,7 @@
         <ul class="flex flex-col gap-4 h-fit text-neutral-9">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
-          <li><NuxtLink to="/solutions">Products & Solutions</NuxtLink></li>
+          <li><NuxtLink to="/category">Products & Solutions</NuxtLink></li>
           <li><NuxtLink to="/services">Services</NuxtLink></li>
           <li><NuxtLink to="/contact-us">Contact Us</NuxtLink></li>
         </ul>
@@ -32,7 +32,7 @@
           <li class="md:py-10"><NuxtLink to="/" class="hover:text-primary">Home</NuxtLink></li>
           <li class="md:py-10"><NuxtLink to="/about-us" class="hover:text-primary">About Us</NuxtLink></li>
           <li class="md:py-10" @mouseover="showDropdown = true" @mouseleave="showDropdown = false">
-            <NuxtLink to="/solutions" class="hover:text-primary">Products & Solutions</NuxtLink>
+            <NuxtLink to="/category" class="hover:text-primary">Products & Solutions</NuxtLink>
           </li>
           <li class="md:py-10"><NuxtLink to="/services" class="hover:text-primary">Services</NuxtLink></li>
           <li class="md:py-10"><NuxtLink to="/contact-us" class="hover:text-primary">Contact Us</NuxtLink></li>
@@ -44,7 +44,7 @@
         v-for="category in category.items" :key="category.id"
         class="relative overflow-clip pb-3 w-full bg-neutral-9 rounded-md">
         <NuxtLink
-          :to="`/solutions/${category.id}`"
+          :to="`/category/${category.id}`"
           class="flex items-center mx-2 p-2 h-[72px] border-b border-neutral-7">
           <h6 class="text-primary">{{ category.name }}</h6>
         </NuxtLink>
@@ -53,7 +53,7 @@
           <li
             v-for="solution in solutionData(category.id)" :key="solution.id"
             class="flex justify-between items-center gap-1 mx-2 p-2 text-sm underline-fx">
-            <NuxtLink :to="`/solutions/${category.id}/${solution.id}`">
+            <NuxtLink :to="`/category/${category.id}/${solution.id}`">
               {{ solution.name }}
             </NuxtLink>
             <span class="icon-[ph--caret-right-bold] min-w-3 size-3" />
@@ -98,10 +98,3 @@
 		window.removeEventListener('scroll', handleScroll)
 	})
 </script>
-
-<style scoped>
-.router-link-active {
-  @apply font-medium;
-  @apply text-primary;
-}
-</style>

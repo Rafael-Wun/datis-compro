@@ -1,21 +1,21 @@
 <template>
   <SectionDefault>
     <SectionHeading
-      :header="categories.header"
-      :title="categories.title"
+      :header="category.header"
+      :title="category.title"
       class="mx-auto text-center">
-      {{ categories.description }}
+      {{ category.description }}
     </SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-3 lg:gap-5">
       <CardCategory
-        v-for="category in categories.items" :key="category.id"
-        :data="category" />
+        v-for="item in category.items" :key="item.id"
+        :data="item" />
     </div>
   </SectionDefault>
 </template>
 
 <script setup>
-  import categories from '/static/category.json'
+  import category from '/static/category.json'
 
   definePageMeta({
     meta: [

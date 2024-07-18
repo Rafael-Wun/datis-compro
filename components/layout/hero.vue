@@ -31,8 +31,8 @@
         <p class="w-4/5 md:w-[480px] text-neutral-8">We provide product, service and solution of the highest quality and deliver more value to our customers that earns their respect and loyality</p>
       </div>
       <div class="space-x-5">
-        <NuxtLink target="/about" class="button button-hover-rev primary">Start a Project</NuxtLink>
-        <NuxtLink target="/services" class="button button-hover-rev secondary">Our Services</NuxtLink>
+        <NuxtLink to="/about-us" class="button button-hover-rev primary">Get to Know Us</NuxtLink>
+        <NuxtLink to="/contact-us" class="button button-hover-rev secondary">Start a Project</NuxtLink>
       </div>
     </div>
   </div>

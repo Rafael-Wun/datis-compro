@@ -1,7 +1,7 @@
 <template>
   <footer class="pt-10 text-xs lg:text-sm text-neutral-9 bg-neutral-2">
-    <div class="space-y-10 mx-4 md:mx-auto md:w-4/5">
-      <div class="flex flex-col md:flex-row md:flex-wrap-reverse xl:flex-nowrap md:justify-between gap-10">
+    <div class="space-y-10 mx-4 md:mx-8 xl:mx-auto xl:w-4/5">
+      <div class="flex flex-col md:flex-row md:flex-wrap-reverse xl:flex-nowrap md:justify-between gap-10 md:gap-7">
         <div class="space-y-5">
           <span class="text-base md:text-lg font-medium">Contact Info</span>
           <div class="space-y-4">
@@ -23,30 +23,32 @@
             </div>
           </div>
         </div>
-        <div class="space-y-5">
-          <NuxtLink to="/solutions" class="text-base md:text-lg font-medium">Solutions</NuxtLink>
-          <div class="flex flex-col gap-4">
-            <NuxtLink
-              v-for="category in category.items" :key="category.id"
-              :to="`/solutions/${category.id}`"
-              class="flex items-center gap-2 hover:text-primary whitespace-nowrap"
-            >
-              <span class="icon-[ph--caret-double-right-bold]" />
-              {{ category.name }}
-            </NuxtLink>
+        <div class="flex flex-col md:flex-row gap-10 md:gap-20 xl:gap-10">
+          <div class="space-y-5">
+            <NuxtLink to="/category" class="text-base md:text-lg font-medium">Solutions</NuxtLink>
+            <div class="flex flex-col gap-4">
+              <NuxtLink
+                v-for="category in category.items" :key="category.id"
+                :to="`/category/${category.id}`"
+                class="flex items-center gap-2 hover:text-primary whitespace-nowrap"
+              >
+                <span class="icon-[ph--caret-double-right-bold]" />
+                {{ category.name }}
+              </NuxtLink>
+            </div>
           </div>
-        </div>
-        <div class="space-y-5">
-          <NuxtLink to="/services" class="text-base md:text-lg font-medium">Services</NuxtLink>
-          <div class="flex flex-col gap-4">
-            <NuxtLink
-              v-for="service in services.items" :key="service.id"
-              :to="`/services/${service.id}`"
-              class="flex items-center gap-2 hover:text-primary whitespace-nowrap"
-            >
-              <span class="icon-[ph--caret-double-right-bold]" />
-              {{ service.name }}
-            </NuxtLink>
+          <div class="space-y-5">
+            <NuxtLink to="/services" class="text-base md:text-lg font-medium">Services</NuxtLink>
+            <div class="flex flex-col gap-4">
+              <NuxtLink
+                v-for="service in services.items" :key="service.id"
+                :to="`/services/${service.id}`"
+                class="flex items-center gap-2 hover:text-primary whitespace-nowrap"
+              >
+                <span class="icon-[ph--caret-double-right-bold]" />
+                {{ service.name }}
+              </NuxtLink>
+            </div>
           </div>
         </div>
         <div class="space-y-5">
@@ -62,7 +64,7 @@
           <p><span class="font-semibold">PT. Data Integrasi Semesta</span> is a system integrator company specializing in building services and fire safety engineering, incorporating and implementing the latest technology and IoT solutions.</p>
         </div>
       </div>
-      <div class="py-4 text-center border-t border-neutral-9">
+      <div class="py-4 text-[9px] md:text-xs text-center border-t border-neutral-9">
         &copy; 2024 PT. Data Integrasi Semesta
         <br>
         All product brands are trademarks of PT. Data Integrasi Semesta
