@@ -118,8 +118,3 @@ h6 {
   @apply border;
   @apply border-neutral-7;
 }
-
-.router-link-active {
-  @apply font-medium;
-  @apply text-primary;
-}

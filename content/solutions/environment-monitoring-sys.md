@@ -21,7 +21,6 @@ Environmental factors cross operating threshold or lack of supervision and manag
 
 <br>
 
-<img src='/catalog/apilogik.png' />
 For the problems existing in small and medium-sized data centers and the characteristics of wide distribution of data centers and monitoring contents, DATIS provides a complete solution to help users to realize centralized monitoring and centralized management.
 
 <br>

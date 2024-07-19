@@ -8,7 +8,7 @@
           <p class="text-neutral-5"><ContentDoc path="overview" /></p>
         </div>
       </div>
-      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block w-64 xl:w-80 3xl:w-[480px] max-h-96 object-cover rounded-md" style="aspect-ratio: 3/4;" />
+      <img src="@/assets/img/overview-bg.jpg" class="hidden md:block max-h-96 object-fill rounded-md" style="aspect-ratio: 3/4;" />
     </div>
   </SectionDefault>
   <div class="bg-primary">
