@@ -1,0 +1,3 @@
+<h5 class='pb-2'>TELTONIKA</h5>
+
+TELTONIKA are a rapidly growing technology company that manufactures professional connectivity equipment for international markets. Through long-term experience in research and development, we developed a broad portfolio of products for the most complex areas of Industry 4.0, Smart City, and Green Energy. We control every stage of the product development cycle, enabling us to respond to market needs quickly and effectively.

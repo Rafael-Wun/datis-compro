@@ -4,99 +4,127 @@
       "id": "icpdas",
       "name": "ICP DAS",
       "category": "data-acquisition-iot",
-      "description": "",
-      "asset": ""
+      "asset": "icpdas.png"
     },
     {
       "id": "brainchild",
       "name": "Brainchild",
       "category": "industrial-hmi-io-module",
-      "description": "",
-      "asset": ""
+      "asset": "brainchild.png"
     },
     {
       "id": "vimpex",
       "name": "VIMPEX",
       "category": "water-detection",
-      "description": "",
-      "asset": ""
+      "asset": "vimpex.png"
     },
     {
       "id": "datis-monitoring-sys",
       "name": "DATIS Monitoring System",
       "category": "environment-monitoring-sys",
-      "description": "",
-      "asset": ""
-    },
-    {
-      "id": "rescuelogic",
-      "name": "RescueLogic",
-      "category": "fire-panel-monitoring-system",
-      "description": "",
-      "asset": ""
+      "asset": "datis.png"
     },
     {
       "id": "apilogik-watch",
       "name": "Apilogik Watch",
       "category": "fire-panel-monitoring-system",
-      "description": "",
-      "asset": ""
+      "asset": "apilogik.png"
+    },
+    {
+      "id": "rescuelogic",
+      "name": "RescueLogic",
+      "category": "fire-panel-monitoring-system",
+      "asset": "rescuelogic.webp"
     },
     {
       "id": "kentec",
       "name": "Kentec",
       "category": "alarm-evacuate",
-      "description": "",
-      "asset": ""
+      "asset": "kentec.png"
     },
     {
       "id": "hochiki",
       "name": "HOCHIKI",
       "category": "alarm-evacuate",
-      "description": "",
-      "asset": ""
+      "asset": "hochiki.png"
     },
     {
       "id": "hikvision",
       "name": "HIKvision",
       "category": "surveillance-security-sys",
-      "description": "",
-      "asset": ""
+      "asset": "hikvision.png"
     },
     {
       "id": "uniview",
       "name": "Uniview",
       "category": "surveillance-security-sys",
-      "description": "",
-      "asset": ""
+      "asset": "unv.png"
     },
     {
       "id": "zkteco",
       "name": "ZKTeco",
       "category": "surveillance-security-sys",
-      "description": "",
-      "asset": ""
+      "asset": "zkteco.png"
     },
     {
       "id": "suprema",
       "name": "Suprema",
       "category": "surveillance-security-sys",
-      "description": "",
-      "asset": ""
+      "asset": "suprema.jpg"
     },
     {
       "id": "trendnet",
       "name": "TrendNET",
       "category": "network-security",
-      "description": "",
-      "asset": ""
+      "asset": "trendnet.png"
     },
     {
-      "id": "",
-      "name": "",
-      "category": "",
-      "description": "",
-      "asset": ""
+      "id": "cisco",
+      "name": "CISCO",
+      "category": "network-security",
+      "asset": "cisco.png"
+    },
+    {
+      "id": "netviel",
+      "name": "NETVIEL",
+      "category": "network-security",
+      "asset": "netviel.png"
+    },
+    {
+      "id": "smart-optics",
+      "name": "SmartOptics",
+      "category": "network-security",
+      "asset": "smoptic.png"
+    },
+    {
+      "id": "teltonika-net",
+      "name": "Teltonika Networks",
+      "category": "network-security",
+      "asset": "teltonika.png"
+    },
+    {
+      "id": "lenovo",
+      "name": "Lenovo",
+      "category": "pc-end-computing",
+      "asset": "lenovo.png"
+    },
+    {
+      "id": "dell",
+      "name": "Dell",
+      "category": "pc-end-computing",
+      "asset": "dell.png"
+    },
+    {
+      "id": "hp",
+      "name": "HP",
+      "category": "pc-end-computing",
+      "asset": "hp.png"
+    },
+    {
+      "id": "axiomtek",
+      "name": "Axiomtek",
+      "category": "industrial-computer",
+      "asset": "axiomtek.png"
     }
   ]
 }

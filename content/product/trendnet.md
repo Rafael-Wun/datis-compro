@@ -1,0 +1,3 @@
+<h5 class='pb-2'>TRENDnet</h5>
+
+TRENDnet is a global provider of award-winning networking and surveillance solutions to small and medium-sized businesses, as well as home office users. Our vision is to build innovative, easy-to-use, and reliable Networks People Trust™. TRENDnet solutions network the countless devices which enable your connected lifestyle and workplace. Building award-winning networking solutions since 1990, TRENDnet connects you with what you value most.

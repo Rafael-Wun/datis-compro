@@ -1,32 +1,5 @@
-<div class="grid grid-cols-1 gap-5">
-  <div class="flex gap-8 p-6 w-full bg-white border border-neutral-6 rounded-md">
-    <div class="grid place-content-center min-w-24 h-24">
-      <img src="./partner/brainchild.png" class="object-cover" />
-    </div>
-    <div>
-      <h5>Operator Interfaces - Human Machine Interfaces (HMI)</h5>
-      <p class="pt-4">
-        SmartPanels are new Human Machine Interface (HMI) / Operator Interfaces, WinCE 6.0, LED technology, Wide panels, higher resolution, and four sizes in 4.3”, 7”, 10” & 15”. Ethernet, USB host, 2 Serial ports, SD, Audio input/output. Extensive connectivity to Profibus-DP, ProfiNet, DeviceNet, EtherNet/IP. CANopen,BACnet/IP & CC-Link. Metal/Stainless steel enclosures for rugged environments. Vertical/Horizontal installation. IP66K for Food, Beverage, Pharma and Oil & Gas.
-      </p>
-      <p class="pt-4">
-        As a professional and experienced operator interface panel manufacturer, we supply high-performance and quality human machine interfaces (HMI), which are also called operator panels, operator interfaces, operator interface terminals, HMI, industrial HMI, HMI screen, and HMI touch screen.
-      </p>
-      <ul class="list-disc">
-        <li class="ml-8">Five models in four sizes of 4.3”, 7”, 10” & 15”</li>
-        <li class="ml-8">Two low-cost models HMI 450 & 730 with optional Ethernet and SD slot, three high-performance HMI 750, 1060 (wide screen) & 1550 with standard Ethetnet and SD slot.</li>
-        <li class="ml-8">Touch panels, higher resolution and all in 65536 colors</li>
-        <li class="ml-8">USB host, 2 Serial ports.</li>
-        <li class="ml-8">Networks of Profibus-DP, ProfiNet, DeviceNet & EtherNet/IP, CANopen, CC-Link.</li>
-        <li class="ml-8">Advanced and reliable WinCE 6.0 platform with more features for efficient and sophisticated control solutions</li>
-        <li class="ml-8">HMI 750, 1550 standard aluminum front bezels, optional stainless steel fronts for food, beverage, pharmaceutical industries</li>
-        <li class="ml-8">Rugged stainless steel front bezels with IP66K for high protection on dust & water, and polished surface for easy cleaning</li>
-        <li class="ml-8">Large memory of 128 MB Flash, 256MB SDRAM, sound input + output, 3DI + 3DO</li>
-        <li class="ml-8">USB Host port used for Keyboard, USB stick and mouse</li>
-        <li class="ml-8">Horizontal or vertical installation and display</li>
-        <li class="ml-8">Wide range of power supply 11-36 VDC or 90-250 VAC</li>
-        <li class="ml-8">LED backlight for even-color displays and long lifetime</li>
-        <li class="ml-8">Open WinCE 6.0 Core & Professional panels for OEM business</li>
-      </ul>
-    </div>
-  </div>
-</div>
+In an industrial setting, the ability to monitor and control equipment with accuracy and ease is essential. Our HMI solutions provide intuitive interfaces that allow operators to interact with complex systems effortlessly, improving productivity and reducing the risk of errors. Coupled with our versatile I/O modules, which handle a wide range of signals and data types, you can achieve precise control over every aspect of your operations. Our solutions are built to withstand the harsh conditions of industrial environments, offering durability, reliability, and long-term performance. Whether you’re upgrading an existing system or building a new one from the ground up, our Industrial HMI & I/O Modules offer the flexibility and scalability you need.
+
+<br>
+
+We offer a comprehensive range of Industrial HMI & I/O Modules tailored to various industrial applications. From simple interfaces to advanced touchscreens, and from basic I/O modules to complex signal processing units, we have the right solutions to meet your specific requirements. In the fast-paced world of industrial automation, having the right tools at your disposal is key to staying ahead. Our Industrial HMI & I/O Modules provide the reliability, flexibility, and performance you need to keep your operations running smoothly and efficiently. Reach out to us today to explore how our solutions can transform your industrial processes.

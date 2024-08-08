@@ -1,0 +1,3 @@
+<h5 class='pb-2'>Axiomtek is an Industrial PC Manufacture made in Taiwan</h5>
+
+Axiomtek as one of the best manufacturers from Taiwan, which is recognized worldwide in creative innovation in the industrial computer and embedded field. Axiomtek has demonstrated its commitment, dedication and ethics as a manufacturer of industrial computers and embedded platforms, by producing state-of-the-art solutions that support users in achieving excellence in quality and customer satisfaction.

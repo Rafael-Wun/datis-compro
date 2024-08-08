@@ -1,0 +1,3 @@
+<h5 class='pb-2'>ZKTeco</h5>
+
+ZKTECO CO., LTD. (ZKTeco) (301330: CN Shenzhen Stock Exchange) is an internationally renowned enterprise which specializes in pioneering biometric recognition techniques, and provides products and solutions of smart entrance management, smart identity authentication and smart office. ZKTeco offers services on all fronts to public-service, enterprise-level and personal users.

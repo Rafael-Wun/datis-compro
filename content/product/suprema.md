@@ -1,0 +1,3 @@
+<h5 class='pb-2'>Suprema</h5>
+
+Suprema is a leading global provider of access control, time & attendance and biometrics solutions. By combining world renowned biometric algorithms with superior engineering, Suprema has introduced innovations to the security industry over the last decades. Suprema’s extensive range of portfolio includes biometric access control systems, time & attendance solutions, fingerprint live scanners, mobile authentication solutions and embedded fingerprint modules. Suprema is named the world’s top 50 security manufacturers and has a worldwide sales network in over 140 countries with no.1 market share in biometric access control in EMEA region.

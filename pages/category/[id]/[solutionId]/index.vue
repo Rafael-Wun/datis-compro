@@ -5,6 +5,9 @@
         <div class="space-y-5 w-full">
           <h4>{{ solutionData.name }}</h4>
           <ContentDoc :path="`/solutions/${solutionData.id}`" />
+          <CardProduct 
+            v-for='product in catalogData' :key='product.id'
+            :asset='product.asset' />
         </div>
       </div>
       <div class="flex flex-col gap-5 xl:gap-10">
@@ -77,8 +80,15 @@
       ],
     })
     categoryData.value = category.items.find(item => item.id === newSolutionData.category)
-    otherSolution.value = solutions.items.filter(item => item.category === newSolutionData.category && item.id !== newSolutionData.id)
+    otherSolution.value = solutions.items.filter(item => item.category === newSolutionData.category)
     catalogData.value = catalog.items.filter(item => item.category === newSolutionData.id)
     route.meta.title = newSolutionData.name
   }, { immediate: true })
 </script>
+
+<style scoped>
+.router-link-active {
+  @apply font-medium;
+  @apply text-primary;
+}
+</style>

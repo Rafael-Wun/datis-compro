@@ -1,36 +1,5 @@
-<div class="grid grid-cols-1 gap-5">
-  <div class="flex gap-8 p-6 w-full bg-white border border-neutral-6 rounded-md">
-    <div class="grid place-content-center min-w-24 h-24">
-      <img src="../../public/catalog/apilogik.png" class="object-cover" />
-    </div>
-    <div>
-      <h5>Apilogik Watch</h5>
-      <p class="pt-4">
-        The Apilogik System gives the ability to monitor your fire panel from anywhere in the world. The gateway connects to the control unit via the panel’s RS232 port. And simply connect the gateway to the building's networked internet connection and register your device. You will be able to remotely view the status of your Fire Alarm System connected devices from your computer, tablet, or smartphone. Can used to monitor real-time events from a standalone, multiple standalone or multiple networked fire alarm control panels. This software tool offers a means to monitor events (Alarm, Supervisory, Trouble, etc.), locate devices and provide a building floor plan.
-      </p>
-      Features :
-      <ul class='pt-2 pl-6 leading-relaxed list-disc'>
-        <li class='pl-1'>A cloud hosted database</li>
-        <li class='pl-1'>Web portal system event monitoring in real-time</li>
-        <li class='pl-1'>E-mail and app notifications</li>
-        <li class='pl-1'>Fully monitored GUI "Graphical User Interface" in the smartphone on your hand</li>
-        <li class='pl-1'>Pinpoints the fire incident location and fire spread</li>
-        <li class='pl-1'>Distinct user access levels and account types</li>
-        <li class='pl-1'>One Administrator account controls account privileges</li>
-        <li class='pl-1'>Standard Ethernet-over-IP Connection</li>
-        <li class='pl-1'>Unlimited of connected Fire Alarm Panels</li>
-      </ul>
-    </div>
-  </div>
-  <div class="flex gap-8 p-6 w-full bg-white border border-neutral-6 rounded-md">
-    <div class="grid place-content-center min-w-24 h-24">
-      <img src="./partner/rescuelogic.webp" class="object-cover" />
-    </div>
-    <div>
-      <h5>Rescuelogic</h5>
-      <p class="pt-4">
-        RescueLogic is “Safety Made Simple.” We make it easy to access all of the data from every alarm, panel, and smart device in your building — all in a single, streamlined interface. It’s easy to install, and easy to set up with your maps and floor plans. You can even choose to send automatic email and text alerts about the status of your alarm system.
-      </p>
-    </div>
-  </div>
-</div>
+Fire safety is a critical concern for any building, whether it's a residential complex, commercial facility, or industrial site. Early detection and rapid response are crucial in preventing loss of life and property. Our Fire Panel Monitoring System provides a reliable and efficient solution to ensure your premises are always protected. In an emergency, every second counts. Traditional fire alarm systems, while essential, may not offer the comprehensive coverage and real-time monitoring that modern buildings require. Our Fire Panel Monitoring System is designed to bridge this gap, providing continuous oversight and instant alerts, so you can respond swiftly to any threat. This system not only monitors the status of your fire panels but also offers real-time data analysis, fault detection, and seamless integration with your existing fire safety infrastructure. Whether you're responsible for a single building or multiple sites, our solution ensures that you're always in control and ready to act.
+
+<br>
+
+We offer a state-of-the-art Fire Panel Monitoring System that is tailored to meet the specific needs of your building. Our system provides you with the tools to monitor fire panel activity around the clock, ensuring that any issues are detected and addressed immediately. When it comes to fire safety, there’s no room for compromise. Our Fire Panel Monitoring System gives you peace of mind, knowing that your building is under constant protection. Don’t leave safety to chance—invest in a monitoring system that keeps you informed and prepared at all times. Contact us today to learn more about how our solution can safeguard your premises.

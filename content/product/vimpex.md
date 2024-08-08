@@ -1,0 +1,3 @@
+<h5 class='pb-2'>VIMPEX: Hydrosense</h5>
+
+Hydrosense leak detection systems are designed to protect areas where water ingress could seriously damage electrical, communication and computer networks. Vimpex are also experts in voice sounder and audible/visual evacuation technology. Vimpex offer a complete range of voice sounders, audible and visual alarms and accessories including the revolutionary Fire-Cryer Voice Sounder, ClamBell and StroBell.

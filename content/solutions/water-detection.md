@@ -1,13 +1,5 @@
-<div class="grid grid-cols-1 gap-5">
-  <div class="flex gap-8 p-6 w-full bg-white border border-neutral-6 rounded-md">
-    <div class="grid place-content-center min-w-24 h-24">
-      <img src="./partner/vimpex.png" class="object-cover" />
-    </div>
-    <div>
-      <h5>VIMPEX</h5>
-      <p class="pt-4">
-        Hydrosense leak detection systems are designed to protect areas where water ingress could seriously damage electrical, communication and computer networks. Vimpex are also experts in voice sounder and audible/visual evacuation technology. Vimpex offer a complete range of voice sounders, audible and visual alarms and accessories including the revolutionary Fire-Cryer Voice Sounder, ClamBell and StroBell.
-      </p>
-    </div>
-  </div>
-</div>
+Water leaks can occur in unexpected places and often go unnoticed until significant damage has been done. A water detection system acts as your first line of defense, alerting you to potential issues before they escalate. From server rooms and data centers to residential basements and commercial spaces, our systems are designed to detect even the smallest amount of water, giving you the time you need to respond quickly. With our advanced technology, you can monitor vulnerable areas 24/7, ensuring that leaks, drips, or floods are detected the moment they occur. This proactive approach to water management not only helps you avoid costly repairs but also protects your valuable assets and maintains business continuity.
+
+<br>
+
+We offer a range of Water Detection Systems that cater to different environments and needs. Whether you require a simple standalone sensor or a comprehensive network of detectors, our solutions are built to provide accurate and timely alerts, ensuring your property remains dry and secure. Don’t wait for water damage to disrupt your business or home. With our Water Detection Systems, you can take control and protect your property from the unexpected. Contact us today to learn more about how our solutions can provide the peace of mind you need, knowing that your space is always secure from water threats.

@@ -1,13 +1,5 @@
-<div class="grid grid-cols-1 gap-5">
-  <div class="flex gap-8 p-6 w-full bg-white border border-neutral-6 rounded-md">
-    <div class="grid place-content-center min-w-24 h-24">
-      <img src="./partner/axiomtek.png" class="object-cover" />
-    </div>
-    <div>
-      <h5>Axiomtek is an Industrial PC Manufacture made in Taiwan</h5>
-      <p class="pt-4">
-        Axiomtek as one of the best manufacturers from Taiwan, which is recognized worldwide in creative innovation in the industrial computer and embedded field. Axiomtek has demonstrated its commitment, dedication and ethics as a manufacturer of industrial computers and embedded platforms, by producing state-of-the-art solutions that support users in achieving excellence in quality and customer satisfaction.
-      </p>
-    </div>
-  </div>
-</div>
+In demanding industrial environments, standard computers simply won't cut it. Whether it's extreme temperatures, dust, vibrations, or the need for continuous operation, your business requires computing solutions that are as tough as the conditions they operate in. Our Industrial Computers are engineered to meet these challenges head-on, providing reliable performance where it matters most. These computers aren't just about durability—they also deliver high performance, enabling you to handle complex tasks, run sophisticated software, and connect with other industrial systems seamlessly.
+
+<br>
+
+We provide a range of Industrial Computers tailored to meet the specific needs of your industry. Whether you require a compact unit for tight spaces, a high-performance model for intensive processing tasks, or a fanless design for silent operation, we have the right solution for you. Investing in the right computing hardware is crucial for maintaining efficiency and minimizing downtime in industrial environments. Our Industrial Computers provide the robustness, performance, and flexibility you need to keep your operations running smoothly. Contact us today to find the perfect solution for your industrial computing needs.
