@@ -7,7 +7,7 @@
           <ContentDoc :path="`/solutions/${solutionData.id}`" />
         </div>
       </div>
-      <div class="flex md:flex-col gap-5 xl:gap-10">
+      <div class="flex flex-col gap-5 xl:gap-10">
         <div v-if="otherSolution.length > 0" class="overflow-clip bg-white rounded-md">
           <NuxtLink :to="`/category/${categoryData.id}`" class="block p-3 text-neutral-9 bg-primary">
             <h6>{{ categoryData.name }}</h6>
@@ -19,18 +19,6 @@
               <NuxtLink :to="`/category/${categoryData.id}/${item.id}`" class="hover:text-primary">
                 {{ item.name }}
               </NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div v-if="catalogData.length > 0" class="overflow-clip bg-white rounded-md">
-          <div class="block p-3 text-neutral-9 bg-primary">
-            <h6>Product Catalog</h6>
-          </div>
-          <ul class="py-2 min-w-64 border-x border-b border-neutral-7 rounded-b-md">
-            <li
-              v-for="item in catalogData" :key="item.id"
-              class="px-5 py-3 whitespace-nowrap">
-              <NuxtLink class="hover:text-primary">{{ item.name }}</NuxtLink>
             </li>
           </ul>
         </div>
@@ -46,6 +34,18 @@
             </li>
           </ul>
         </div>
+        <!-- <div v-if="catalogData.length > 0" class="overflow-clip bg-white rounded-md">
+          <div class="block p-3 text-neutral-9 bg-primary">
+            <h6>Product Catalog</h6>
+          </div>
+          <ul class="py-2 min-w-64 border-x border-b border-neutral-7 rounded-b-md">
+            <li
+              v-for="item in catalogData" :key="item.id"
+              class="px-5 py-3 whitespace-nowrap">
+              <NuxtLink class="hover:text-primary">{{ item.name }}</NuxtLink>
+            </li>
+          </ul>
+        </div> -->
       </div>
     </div>
     <NuxtLink to="/contact-us"class="button button-hover primary">Contact Us Now</NuxtLink>

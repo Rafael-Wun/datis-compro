@@ -3,7 +3,13 @@
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
 
 export default {
-  content: [],
+  content: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
   theme: {
     screens: {
       'sm': '640px',

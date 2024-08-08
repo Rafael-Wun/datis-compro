@@ -6,7 +6,7 @@
       class="mx-auto text-center">
       {{ category.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 lg:gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-5">
       <CardCategory
         v-for="item in category.items" :key="item.id"
         :data="item" />

@@ -1,32 +1,74 @@
 {
   "items": [
     {
-      "id": "fire-suppression",
-      "name": "Fire Suppression",
-      "category": "fire-safety",
-      "description": "lorem ipsum dolor sit amet",
-      "asset": ""
+      "id": "data-acquisition-iot",
+      "name": "Data Acquisition & IoT",
+      "category": "building-tech",
+      "description": "",
+      "asset": "daq.webp"
     },
     {
-      "id": "fire-panel-monitoring-system",
-      "name": "Fire Panel Monitoring System",
-      "category": "fire-safety",
-      "description": "lorem ipsum dolor sit amet",
-      "asset": ""
+      "id": "industrial-hmi-io-module",
+      "name": "Industrial HMI & I/O module",
+      "category": "building-tech",
+      "description": "",
+      "asset": "ihmi.webp"
+    },
+    {
+      "id": "water-detection",
+      "name": "Water Detection",
+      "category": "building-tech",
+      "description": "",
+      "asset": "wtdt.webp"
     },
     {
       "id": "environment-monitoring-sys",
       "name": "Environment Monitoring System",
       "category": "building-tech",
-      "description": "lorem ipsum dolor sit amet",
-      "asset": ""
+      "description": "",
+      "asset": "ems.webp"
     },
     {
-      "id": "water-leak-detection-sys",
-      "name": "Water Leak Detection System",
-      "category": "building-tech",
-      "description": "lorem ipsum dolor sit amet",
-      "asset": ""
+      "id": "fire-panel-monitoring-system",
+      "name": "Fire Panel Monitoring System",
+      "category": "fire-safety",
+      "description": "",
+      "asset": "fpms.webp"
+    },
+    {
+      "id": "alarm-evacuate",
+      "name": "Alarm & Evacuation",
+      "category": "fire-safety",
+      "description": "",
+      "asset": "dev.webp"
+    },
+    {
+      "id": "surveillance-security-sys",
+      "name": "Surveillance & Security System",
+      "category": "security-sys",
+      "description": "",
+      "asset": "ssys.webp"
+    },
+    {
+      "id": "network-security",
+      "name": "Network & Security",
+      "category": "it-products",
+      "description": "",
+      "asset": "nets.webp"
+    },
+    {
+      "id": "pc-end-computing",
+      "name": "PC End Computing",
+      "category": "it-products",
+      "description": "",
+      "asset": "pec.webp"
+    },
+    {
+      "id": "industrial-computer",
+      "name": "Industrial Computer",
+      "category": "it-products",
+      "description": "",
+      "asset": "icom.webp"
     }
   ]
 }

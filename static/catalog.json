@@ -1,11 +1,102 @@
 {
   "items": [
     {
+      "id": "icpdas",
+      "name": "ICP DAS",
+      "category": "data-acquisition-iot",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "brainchild",
+      "name": "Brainchild",
+      "category": "industrial-hmi-io-module",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "vimpex",
+      "name": "VIMPEX",
+      "category": "water-detection",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "datis-monitoring-sys",
+      "name": "DATIS Monitoring System",
+      "category": "environment-monitoring-sys",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "rescuelogic",
+      "name": "RescueLogic",
+      "category": "fire-panel-monitoring-system",
+      "description": "",
+      "asset": ""
+    },
+    {
       "id": "apilogik-watch",
       "name": "Apilogik Watch",
       "category": "fire-panel-monitoring-system",
       "description": "",
-      "asset": "apilogik.png"
+      "asset": ""
+    },
+    {
+      "id": "kentec",
+      "name": "Kentec",
+      "category": "alarm-evacuate",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "hochiki",
+      "name": "HOCHIKI",
+      "category": "alarm-evacuate",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "hikvision",
+      "name": "HIKvision",
+      "category": "surveillance-security-sys",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "uniview",
+      "name": "Uniview",
+      "category": "surveillance-security-sys",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "zkteco",
+      "name": "ZKTeco",
+      "category": "surveillance-security-sys",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "suprema",
+      "name": "Suprema",
+      "category": "surveillance-security-sys",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "trendnet",
+      "name": "TrendNET",
+      "category": "network-security",
+      "description": "",
+      "asset": ""
+    },
+    {
+      "id": "",
+      "name": "",
+      "category": "",
+      "description": "",
+      "asset": ""
     }
   ]
 }

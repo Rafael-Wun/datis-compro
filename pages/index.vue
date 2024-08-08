@@ -6,7 +6,7 @@
       class="mx-auto text-center">
       {{ categories.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 lg:gap-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-5">
       <CardCategory
         v-for="category in categories.items" :key="category.id"
         :data="category" />
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-3 py-6 bg-white border border-neutral-7 rounded-md">
+      <div class="grid grid-cols-3 content-center h-32 bg-white border border-neutral-7 rounded-md">
         <div class="flex flex-col items-center gap-2">
           <h5 class="text-primary">6+ Years</h5>
           <p class="font-medium text-neutral-6 uppercase">experiences</p>

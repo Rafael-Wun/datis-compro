@@ -1,17 +1,10 @@
 <template>
   <div v-if="$route.path != '/'">
-    <img src="@/assets/img/hero-bg.jpg" class="absolute inset-0 z-0 w-full h-48 md:h-64 lg:h-80 object-cover brightness-50" />
-    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 w-auto xl:w-4/5 h-48 md:h-64 lg:h-80 text-neutral-9">
+    <img src="@/assets/img/hero-bg.jpg" class="absolute inset-0 z-0 w-full h-52 md:h-64 lg:h-80 object-cover brightness-50" />
+    <div class="relative z-10 flex flex-col justify-end gap-10 mx-4 md:mx-8 xl:mx-auto pb-10 md:pb-14 lg:pb-20 w-auto xl:w-4/5 h-52 md:h-64 lg:h-80 text-neutral-9">
       <div class="space-y-2">
         <h3 v-if="$route.meta.title">{{ $route.meta.title }}</h3>
-        <nav aria-label="breadcrumb">
-          <ul>
-            <li v-for="(crumb, index) in breadcrumbs" :key="index" class="inline text-neutral-9">
-              <NuxtLink v-if="index < breadcrumbs.length - 1" :to="crumb.path">{{ crumb.name }} / </NuxtLink>
-              <span v-else>{{ crumb.name }}</span>
-            </li>
-          </ul>
-        </nav>
+        <LayoutBreadcumb />
       </div>
     </div>
   </div>
@@ -23,7 +16,7 @@
       </NuxtLink> -->
       <div class="space-y-3">
         <div>
-          <h2 class="w-full md:w-[600px] text-neutral-9 leading-tight">Your Trusted Partner in</h2>
+          <h2 class="w-4/5 md:w-[600px] text-neutral-9 leading-tight">Your Trusted Partner in</h2>
           <div class="typewriter">
             <h2 class="w-4/5 md:w-[600px] text-neutral-9 leading-tight"><span>{{ displayText }}</span><span class="cursor-fx">|</span></h2>
           </div>
@@ -39,27 +32,6 @@
 </template>
 
 <script setup>
-  const route = useRoute()
-
-  const breadcrumbs = computed(() => {
-    const pathArray = route.path.split('/').filter(p => p)
-    const normalizedTexts = (raw) => {
-      return raw
-        .toLowerCase()
-        .split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
-    }
-    const crumbs = pathArray.map((path, index) => {
-      const fullPath = '/' + pathArray.slice(0, index + 1).join('/')
-      return {
-        path: fullPath,
-        name: normalizedTexts(path)
-      }
-    })
-    return [{ path: '/', name: 'Home' }, ...crumbs]
-  })
-
   const texts = ['Engineering', 'Technology', 'Products']
   const displayText = ref('')
 

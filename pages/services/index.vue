@@ -6,7 +6,8 @@
       class="mx-auto text-center">
       {{ services.description }}
     </SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-3 4xl:grid-cols-4 gap-5 xl:gap-10">
+    <!-- flex flex-wrap justify-center -->
+    <div class="grid grid-cols-1 3xl:flex 3xl:flex-wrap 3xl:justify-center md:grid-cols-3 gap-5 xl:gap-10">
       <CardDefault
         v-for="service in services.items" :key="service.id"
         :data="service"

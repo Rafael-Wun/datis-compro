@@ -31,7 +31,7 @@
         <ul class="flex gap-10 h-fit text-neutral-9">
           <li class="md:py-10"><NuxtLink to="/" class="hover:text-primary">Home</NuxtLink></li>
           <li class="md:py-10"><NuxtLink to="/about-us" class="hover:text-primary">About Us</NuxtLink></li>
-          <li class="md:py-10" @mouseover="showDropdown = true" @mouseleave="showDropdown = false">
+          <li class="md:py-10" @mouseover="openDropdown" @mouseleave="closeDropdown">
             <NuxtLink to="/category" class="hover:text-primary">Products & Solutions</NuxtLink>
           </li>
           <li class="md:py-10"><NuxtLink to="/services" class="hover:text-primary">Services</NuxtLink></li>
@@ -39,13 +39,17 @@
         </ul>
       </div>
     </nav>
-    <div v-if="showDropdown" class="flex gap-5 mx-auto py-4 w-4/5" @mouseover="showDropdown = true" @mouseleave="showDropdown = false">
+    <div 
+      v-if="showDropdown" 
+      class="flex gap-5 mx-auto pb-4 w-4/5 bg-neutral-2" 
+      @mouseover="openDropdown" 
+      @mouseleave="closeDropdown">
       <div
         v-for="category in category.items" :key="category.id"
         class="relative overflow-clip pb-3 w-full bg-neutral-9 rounded-md">
         <NuxtLink
           :to="`/category/${category.id}`"
-          class="flex items-center mx-2 p-2 h-[72px] border-b border-neutral-7">
+          class="flex items-center mx-2 p-2 h-[72px] border-b border-neutral-7 underline-fx">
           <h6 class="text-primary">{{ category.name }}</h6>
         </NuxtLink>
         <img :src="`/icon/${category.icon}`" class="absolute -right-6 -bottom-6 size-40 opacity-30" />
@@ -89,6 +93,18 @@
   }
 
   const showDropdown = ref(false)
+  let dropdownTimeout
+
+  const openDropdown = () => {
+    clearTimeout(dropdownTimeout)
+    showDropdown.value = true
+  }
+
+  const closeDropdown = () => {
+    dropdownTimeout = setTimeout(() => {
+      showDropdown.value = false
+    }, 200)
+  }
 
   onMounted(() => {
 		handleScroll()
@@ -103,5 +119,27 @@
 .router-link-active {
   @apply font-medium;
   @apply text-primary;
+}
+
+.underline-fx {
+  @apply relative;
+  @apply cursor-pointer;
+
+  &::after {
+    content: '';
+    @apply absolute;
+    @apply left-1/2;
+    @apply bottom-0;
+    @apply w-0;
+    @apply h-0.5;
+    background: transparent;
+    @apply -translate-x-1/2;
+    transition: 0.3s ease;
+  }
+  
+  &:hover::after {
+    @apply w-full;
+    @apply bg-primary;
+  }
 }
 </style>
